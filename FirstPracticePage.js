@@ -82,6 +82,39 @@ http.createServer(function(req,res){
 }).listen(3000);
 
 
+/// Practice - 2
+
+//// file module.js
+
+exports.myTime = function(){
+        return Date();
+}
+
+
+var http = require('http')
+var dt = require('./module')
+
+http.createServer(function (req,res){
+        res.writeHead(200,{'Content-type':'text/html'});
+        res.write("This is today's date"+dt.myTime)
+        res.end("Hello world")
+}).listen(3000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
