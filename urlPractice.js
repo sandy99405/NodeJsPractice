@@ -46,9 +46,19 @@ http.createServer(function(req,res){
 
 // Creating files
 
-var fs = require('fs')
+// using appendFile
+/* var fs = require('fs')
 
 fs.appendFile('Newfile.txt','Hello Sandy',function(err){
      if(err) throw err;
      console.log('File saved!!')
+}) */
+
+// using Open method
+
+var fs = require('fs')
+
+fs.open('NewFile1.txt','w',function(err,file){
+     if(err) throw err;
+     console.log('File opened')
 })
