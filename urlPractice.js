@@ -75,10 +75,20 @@ fs.writeFile('NewFile2.txt','Hello Sandy',function(err){
 
 
 // using append file to append data to an existing file
+/* 
+var fs = require('fs')
+
+fs.appendFile('NewFile.txt','\n Added new sentence',function(err){
+      if(err) throw err
+      console.log('Appended to old file')
+}) */
+
+
+//using writeFile to replace the content
 
 var fs = require('fs')
 
-fs.appendFile('NewFile.txt','Added new sentence',function(err){
+fs.writeFile('NewFile2.txt','Replaced it',function(err){
       if(err) throw err
-      console.log('Appended to old file')
+      console.log('Replace the file')
 })
