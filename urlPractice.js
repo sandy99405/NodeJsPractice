@@ -31,7 +31,7 @@ http.createServer(function(req,res){
 }).listen(3000) */
 
 
-var http = require('http')
+/* var http = require('http')
 
 var fs = require('fs')
 
@@ -41,4 +41,14 @@ http.createServer(function(req,res){
            res.write(data)
            return res.end()
       })
-}).listen(3001)
+}).listen(3001) */
+
+
+// Creating files
+
+var fs = require('fs')
+
+fs.appendFile('Newfile.txt','Hello Sandy',function(err){
+     if(err) throw err;
+     console.log('File saved!!')
+})
