@@ -66,9 +66,19 @@ fs.open('NewFile1.txt','w',function(err,file){
 
 // using writeFile
 
-var fs = require('fs')
+/* var fs = require('fs')
 
 fs.writeFile('NewFile2.txt','Hello Sandy',function(err){
      if(err) throw err
      console.log("Written to file")
+}) */
+
+
+// using append file to append data to an existing file
+
+var fs = require('fs')
+
+fs.appendFile('NewFile.txt','Added new sentence',function(err){
+      if(err) throw err
+      console.log('Appended to old file')
 })
