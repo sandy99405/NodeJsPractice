@@ -85,10 +85,27 @@ fs.appendFile('NewFile.txt','\n Added new sentence',function(err){
 
 
 //using writeFile to replace the content
-
+/* 
 var fs = require('fs')
 
 fs.writeFile('NewFile2.txt','Replaced it',function(err){
       if(err) throw err
       console.log('Replace the file')
+}) */
+
+/// Delete file
+
+var fs = require('fs')
+
+fs.unlink('NewFile1.txt',function(err){
+     if(err) throw err
+     console.log("Deleted file")
+})
+
+
+// Rename File
+
+fs.rename("NewFile2.txt","NewFile1.txt",function(err){
+     if(err) throw err
+     console.log("Rename file!! ")
 })
