@@ -95,7 +95,7 @@ fs.writeFile('NewFile2.txt','Replaced it',function(err){
 
 /// Delete file
 
-var fs = require('fs')
+/* var fs = require('fs')
 
 fs.unlink('NewFile1.txt',function(err){
      if(err) throw err
@@ -108,4 +108,15 @@ fs.unlink('NewFile1.txt',function(err){
 fs.rename("NewFile2.txt","NewFile1.txt",function(err){
      if(err) throw err
      console.log("Rename file!! ")
-})
+}) */
+
+// Practice again
+
+var http = require('http')
+
+
+http.createServer(function(req,res){
+     res.writeHead(200,{'Content-type':'text/html'})
+     res.write("hello")
+     res.end()
+}).listen(3000)
