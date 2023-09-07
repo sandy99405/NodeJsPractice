@@ -52,4 +52,4 @@
 
                                              command to erase everything
 
-20) git reset --hard origin/main            // all the changes are gone
+20) git reset --hard origin/main            // all the changes are gone.
