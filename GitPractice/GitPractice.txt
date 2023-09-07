@@ -16,4 +16,23 @@
 
 7) git revert HEAD // it is going to undo the most recent commit by creating a brand new commit.
 
-8) 
+8) git reflog  //logs all the commits that are done  and tells what hapened inside a log
+
+9) git log --graph --decorate --oneline    // it shows the visual representation of how the log is going on with different branches
+
+10) git log -S "Text 2" //search for where we made pirticular code changes
+
+11) git stash // save your work temperorily , switch a branch and come back to your previous branch
+
+12) // using //  - git stash pop // which brings back all the previous changes 
+
+13) git branch -vv   // gives detailed information on all your branches
+
+14) git remote update --prune  // it is going to delete the refernce to your remote repository if the branch no longer exists in your remote repository
+
+15) git branch -vv | awk '/: gone]/{print $1}'   // This prints the name of the branch that is gone. The branch that no longer exists in your remote but in your local repository
+
+16) git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d   // this command deletes the branch in local repository that is not there in the remote repository
+                                      
+                                                   
+17)
