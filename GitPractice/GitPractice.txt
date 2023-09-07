@@ -1,0 +1,19 @@
+1) git add -A
+
+2) git config --global alias.aliasName '!git add -A && git commit -m' // If we dont put '!git' , git will think that you want to add git infront of your command
+
+3) git alisaName "New Commit"   // Two commands combined
+
+3) git commit -a -m 'New commit'     /// but this doesn't add the all the files but the only files that are in the working/current directory
+
+4) git config --global alias.ac 'commit -a -m'
+
+5) git log         // prints all our recent commits
+
+6) git revert hashcode  // here hashcode is the unique hash of a commit // This command undoes the commit that we mention by creating a new commit but keeping the old commit.
+    
+     for example : git revert a12c136cbf4b4907c91adacedc761c5a702a91f4
+
+7) git revert HEAD // it is going to undo the most recent commit by creating a brand new commit.
+
+8) 
