@@ -20,13 +20,13 @@
 
 9) git log --graph --decorate --oneline    // it shows the visual representation of how the log is going on with different branches
 
-10) git log -S "Text 2" //search for where we made pirticular code changes
+10) git log -S "Text 2"                    //search for where we made pirticular code changes
        
                                            stash commands
    
 11) git stash                              // save your work temperorily , switch a branch and come back to your previous branch
 
-12) // using                               //  - git stash pop // which brings back all the previous changes 
+12) // using //  - git stash pop           // which brings back all the previous changes 
 
 
                                            branch commands
@@ -44,7 +44,7 @@
                                                    
 17) git bisect start                         // essentially this is a binary search... this command is used to start
 
-18) git bisect bad   commithash              // to know where does the bug occur // if you dont provide the commit hash , git will assume that the bug occured in the latest commit
+18) git bisect bad commithash              // to know where does the bug occur // if you dont provide the commit hash , git will assume that the bug occured in the latest commit
 
 19) git bisect good commithash               // we pass the commit hash that we know is good, where the bug didn't occur for sure
               
@@ -53,3 +53,44 @@
                                              command to erase everything
 
 20) git reset --hard origin/main            // all the changes are gone.
+
+
+
+
+/// practice commands
+
+1) git commit -a -m "new commit"
+
+2) git add -A 
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git ac "new commit"
+
+5) git revert commithash 
+
+6) git revert HEAD 
+
+7) git reflog
+
+8) git stash
+
+9) git stash pop
+
+10) git branch -vv
+
+11) git remote update --prune
+
+12) git branch -vv | awk '/: gone]/{print $1}'
+
+13) git branch -vv | awk '/: gone]/{print $1}'
+
+14) git bisect start
+
+15) git bisect bad
+
+16) git bisect good 
+
+
+
+
