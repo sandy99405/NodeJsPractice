@@ -115,3 +115,7 @@
 10) git remote update --prune
 
 11) git barnch -vv | awk '/: gone]/{print$1}'
+
+12) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
+13)  
