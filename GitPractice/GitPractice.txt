@@ -91,6 +91,23 @@
 
 16) git bisect good 
 
+                                           practice for today again
 
 
+1) git add - A
 
+2) git commit -a -m 
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git reflog
+
+5) git revert commithash
+
+6) git revert HEAD
+
+7) git stash 
+
+8) git stash pop
+
+9)    
