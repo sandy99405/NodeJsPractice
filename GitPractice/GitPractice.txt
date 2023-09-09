@@ -134,3 +134,11 @@
 17) git log --graph --decorate --oneline
 
 18) git log -S "Changes made"
+  
+               new command
+19)  git config --global help.autocorrect 1
+
+20) git config --global help.autocorrect 0
+
+21) git rev-list --count main  // tells how many commits are done on the main branch
+
