@@ -83,7 +83,7 @@
 
 12) git branch -vv | awk '/: gone]/{print $1}'
 
-13) git branch -vv | awk '/: gone]/{print $1}'
+13) git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
 
 14) git bisect start
 
@@ -110,4 +110,8 @@
 
 8) git stash pop
 
-9)    
+9) git branch -vv
+
+10) git remote update --prune
+
+11) git barnch -vv | awk '/: gone]/{print$1}'
