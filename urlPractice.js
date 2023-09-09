@@ -170,11 +170,24 @@ http.createServer(function (req, res) {
 }).listen(8080); */
 
 // Practice today
-
+/* 
 var http = require('http')
 
 http.createServer(function(req,res){
      res.writeHead(200,{'Content-type':'text/html'})
      res.write("Hello Sandy")
      res.end()
-}).listen(8080)
+}).listen(8080) */
+
+
+var http = require('http')
+
+var fs = require('fs')
+
+http.createServer(function(req,res){
+     fs.readFile("DemoFile.html",function(err,data){
+          res.writeHead(200,{'Content-type':'text/html'})
+          res.write("Hello Sandy"+data)
+          return res.end()          
+     })
+}).listen(2000)
