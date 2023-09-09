@@ -91,6 +91,11 @@
 
 16) git bisect good 
 
+17) git reset --hard origin/main
+
+18) git log --graph --decorate --oneline
+
+19) git log -S "Text2"
                                            practice for today again
 
 
@@ -118,4 +123,14 @@
 
 12) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
 
-13)  
+13) git bisect start
+
+14) git bisect bad
+
+15) git bisect good 
+
+16) git remove --hard origin/master
+
+17) git log --graph --decorate --oneline
+
+18) git log -S "Changes made"
