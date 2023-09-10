@@ -117,7 +117,7 @@
 
 9) git branch -vv
 
-10) git remove update --prune
+10) git remote update --prune
 
 11) git barnch -vv | awk '/: gone]/{print$1}'
 
@@ -129,7 +129,7 @@
 
 15) git bisect good 
 
-16) git remove --hard origin/master
+16) git reset --hard origin/master
 
 17) git log --graph --decorate --oneline
 
@@ -141,6 +141,7 @@
 20) git config --global help.autocorrect 0
 
 21) git rev-list --count main  // tells how many commits are done on the main branch
+
 
                   // commands to practice today 
 
@@ -176,6 +177,7 @@
 
 16) git reset --hard main/origin
 
-17) git remove update --prune 
-
-18) 
+17) git remote update --prune 
+                       
+                         // new commands practice 
+18) git 
