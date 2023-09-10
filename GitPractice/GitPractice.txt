@@ -117,7 +117,7 @@
 
 9) git branch -vv
 
-10) git remote update --prune
+10) git remove update --prune
 
 11) git barnch -vv | awk '/: gone]/{print$1}'
 
@@ -168,3 +168,14 @@
 
 12) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
 
+13) git bisect start 
+
+14) git bisect bad 
+
+15) git bisect good 
+
+16) git reset --hard main/origin
+
+17) git remove update --prune 
+
+18) 
