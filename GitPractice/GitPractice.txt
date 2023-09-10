@@ -186,7 +186,12 @@
  
 20) git config --global help.autocorrect 0
 
-                  New command 
+                  New commands
 
 21) git commit --allow-empty -m "No-op commit for triggering CI/CD"
+
+22) git checkout -b new-branch // to create a new branch 
+
+23) git push --set-upstream origin new-branch     // to create an upstream for the newly created branch so that we can push the commits to it 
+
 
