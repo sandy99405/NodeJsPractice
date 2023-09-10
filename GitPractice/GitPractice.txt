@@ -186,4 +186,7 @@
  
 20) git config --global help.autocorrect 0
 
+                  New command 
+
+21) git commit --allow-empty -m "No-op commit for triggering CI/CD"
 
