@@ -180,4 +180,8 @@
 17) git remote update --prune 
                        
                          // new commands practice 
-18) git 
+18) git rev-list count --main 
+
+19) git config --global help.autocorrect 1
+ 
+20) git config --global help.autocorrect 0
