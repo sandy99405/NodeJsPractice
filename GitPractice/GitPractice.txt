@@ -142,3 +142,29 @@
 
 21) git rev-list --count main  // tells how many commits are done on the main branch
 
+                  // commands to practice today 
+
+1) git commit -m -a "New commit"
+
+2) git add -A 
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert commithash
+
+5) git reflog 
+
+6) git log --decorate --graph --oneline
+
+7) git log -S "Changes made"
+
+8) git stash 
+
+9) git stash pop 
+
+10) git branch -vv 
+
+11) git branch -vv | awk '/: gone]/{print$1}'
+
+12) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
