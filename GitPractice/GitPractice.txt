@@ -195,3 +195,51 @@
 23) git push --set-upstream origin new-branch     // to create an upstream for the newly created branch so that we can push the commits to it 
 
 
+
+
+
+                                   Daily commands practice
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert commithash 
+
+5) git stash 
+
+6) git stash pop
+
+7) git log --decorate --graph --oneline 
+
+8) git reflog 
+
+9) git branch -vv 
+
+10) git branch -vv | awk '/: gone]/{print$1}'
+
+11) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
+12) git bisect start 
+
+13) git bisect bad 
+
+14) git bisect good 
+
+15) git reset --hard origin/main 
+
+16) git remote update --prune 
+
+17) git config --global help.autocorrect 0
+
+18) git config --global help.autocorrect 1
+
+19) git commit --allow-empty -m 
+
+20) git rebase -i origin/main 
+
+21) git checkout -b new-branch    
+
+22) git checkout new-branch 
