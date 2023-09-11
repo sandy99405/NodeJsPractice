@@ -243,3 +243,10 @@
 21) git checkout -b new-branch    
 
 22) git checkout new-branch 
+
+23) git grep 
+
+24) git rev-list count main 
+
+25) git push --set-upstream origin main-branch 
+
