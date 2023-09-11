@@ -244,7 +244,7 @@
 
 22) git checkout new-branch 
 
-23) git grep 
+23) git grep     // ONLY TRACKED FILES WILL BE SEARCHED BY GIT GREP 
 
 24) git rev-list count main 
 
