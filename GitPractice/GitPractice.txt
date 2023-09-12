@@ -283,3 +283,26 @@
 
 15) git log -S "Changed text or code"
 
+16) git bisect start 
+
+17) git bisect bad 
+
+18) git bisect good 
+
+19) git reset --hard origin/main 
+
+20) git rebase -i origin/main 
+
+21) git rev-list --count main 
+
+22) git checkout -b "new-branch"
+
+23) git grep 
+
+24) git push --force 
+
+25) git commit --allow-empty -m "No ops commit"
+
+26) git push --set-upstream origin main-branch 
+
+24) git checkout -   // takes to the previous branch 
