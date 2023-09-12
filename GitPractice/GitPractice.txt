@@ -180,7 +180,7 @@
 17) git remote update --prune 
                        
                          // new commands practice 
-18) git rev-list count --main 
+18) git rev-list --count main 
 
 19) git config --global help.autocorrect 1
  
@@ -246,7 +246,7 @@
 
 23) git grep     // ONLY TRACKED FILES WILL BE SEARCHED BY GIT GREP 
 
-24) git rev-list count main 
+24) git rev-list --count main 
 
 25) git push --set-upstream origin main-branch 
 
@@ -306,3 +306,4 @@
 26) git push --set-upstream origin main-branch 
 
 24) git checkout -   // takes to the previous branch 
+
