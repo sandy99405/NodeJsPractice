@@ -11,7 +11,7 @@ http.createServer(function(req,res){
 }).listen(3000)
 
 
-
+/* 
 To get a response from a Node.js server to a React.js frontend, you'll typically use HTTP requests. Here's a basic example of how to make an HTTP GET request from a React.js component to a Node.js server using the popular axios library for simplicity. First, you need to install axios if you haven't already:
 
 bash
@@ -58,7 +58,7 @@ class App extends Component {
     );
   }
 }
-
+ */
 
 
 
