@@ -443,7 +443,102 @@
 
 end 
 
-////// A way to make git status command terribly slow 
+////// A way to make git status command not terribly slow for extremly large repos such as monolithic repos
 
-1) git 
+1) git clone git@github.com:trovalds/linux --depth1                   // "depth1"  helps clone the repo faster
+
+2) time git status            // The first time it will always be slow cuz i don't have file system chaching set up or any of the git index caching 
+
+3) git config feature.manyFiles 1      // 1) newer version of the index file 
+                                       // 2) It turns  the uncached files to true....basically it will cache whether a file has been touched or not. even though it is untracked that way it doeant have to recheck 
+                                       core.untrackedCache=true  // This option is only safe if your machine implements mtime properly.
+
+
+4) nano .git/config
+
+5) man git config   
+
+                                                   git repository inside git repository  (SUB-MODULES)
+
+
+They can often be useful if you are trying to include some of the repository but you don't have a proper package manager to do so
+
+1) HOW TO CREATE A SUBMODULE
+
+2) HOW TO CLONE A REPOSITORY THAT HAS A SUBMODULE 
+
+3) HOW TO UPDATE A SUBMODULE
+
+4) HOW TO DELETE A SUBMODULE 
+
+
+COMMANDS TYPED: 
+
+1) git init empty 
+
+2) git commit --allow-empty -m "New commit for the day"
+
+3) git status 
+
+4) ls 
+
+5) git submodule add http://github.com/adtpretty         // the git submodule add takes a url and a path, but here we only use the url 
+
+(Note : provide http if you think it is an opensource , if you want it to be private use ssh)
+
+
+6) git status  
+
+(what are simlinks?)
+
+
+7) git diff --staged      // In the output "new file mode 160000" tells that this is not a real file and it is a submodule instead 
+
+
+downsides of submodules 
+
+1) it is hard to see from a diff whether you are ncreasing or decreasing the version of submodule 
+
+(project - buring down the number of submodules)
+
+8) git commit -m "add submodule in the repository"
+
+9) git clone empty empty-clone 
+
+10) git status 
+
+11) ls
+         /// by default submodules are not clones but you force clone submodules when you clone your repository by doing 
+12) git clone empty empty-clone2 --recursive
+
+13) cd empty-clone2
+
+14) ls astpretty
+
+15) cd ../empty-clone 
+
+16) git submodule update --init 
+
+17) git submodule update --init --recursive   //incase if the submodule has a submodule inside of it 
+
+18) cd astpretty/
+
+19) git tag -l           // shows different versions of submodules 
+
+20) git checkout v1.5.0       // do this inside of the submodule... this will change the version that it is pointing to 
+
+21) cd.. 
+
+22) git status 
+
+23) git commit -m "Changed the version"      // finally change the version by making a commit 
+
+
+Delete submodule 
+
+24) git rm astpretty/ 
+
+25) git commit -m "Deleted the submodule"
+
+26) git show 
 
