@@ -373,6 +373,8 @@
 
 32) git config --global help.autocorrect 1
 
+33) git --allow-empty -m "No-ops commit"
+
 
 
                            precise commands 
@@ -405,5 +407,43 @@
 
     //this above command is to atch the .py files that dont call main 
 
+               rebase 
 
-12)  
+
+12)git clone git@github.com:pre-commit/pre-commit-hooks
+
+13) git remote add 
+
+14) git fetch AdityaKhursale 
+
+15) git checkout AdityaKhursale/master -b AdityaKhursale_master
+
+16) git branch -u origin/master 
+
+17) git status 
+
+18) git rebase -i origin/main 
+
+
+     in worst caes use reflog 
+
+
+19) git reflog 
+
+20) git show 
+
+// when you are done editing then use 
+
+21) git rebase --continue
+
+22) git push AdityaKhursale HEAD:master 
+
+23) git push AdityaKhurasale HEAD:master -f 
+
+
+end 
+
+////// A way to make git status command terribly slow 
+
+1) git 
+
