@@ -1,37 +1,12 @@
-/* var http = require('http')
+var express = require('express')
 
-http.createServer(function(req,res){
-       res.writeHead(200,{'Content-type':'text/html'})
-       var q = url.parse(req.url,true).queue()
-       var text = q.month + " " + q.year
-       res.write(text)
-       res.end()
-}).listen(3000) */
+var app = express();
 
+app.get('/get/data',function(req,res){
+        const reqData = {
+              message : "New mesage",
+              data : [1,2,3,4,5]
+        };
+        res.json(responseData)  
+}).listen(2001)
 
-/* const express = require('express');
-const app = express();
-
-app.get('/api/data', (req, res) => {
-  const responseData = {
-    message: 'Hello from Node.js!',
-    data: [1, 2, 3, 4, 5],
-  };
-  res.json(responseData);
-});
-
-app.listen(3001, () => {
-  console.log('Node.js server is running on port 3001');
-}); */
-
-const express = require('express')
-
-const app = express()
-
-app.get('/app/data',function(req,res){
-       const responseData = {
-              message: 'hello from Node.js!',
-              data:[1,2,3,4,5],
-       };
-       res.json(responseData);
-}).listen(3001)
