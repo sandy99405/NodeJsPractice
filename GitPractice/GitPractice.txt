@@ -343,38 +343,29 @@
 
 17) git log -S "Changed text"
 
+18) git grep 
 
+19) git grep -i -n 
 
+20) git rebase -i origin/main 
 
+21) git rebase --continue 
 
+22) git rebase --abort
 
+23) git checkout -b 'new-branch'
 
+24) git stash save "New stash"
 
+25) git stash apply stash{0}
 
+26) git cherrypick commithash
 
+27) git rev-list --count main 
 
+28) git push --set-upstream origin main-branch 
 
+29) git push --force
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+30) git checkout -
 
