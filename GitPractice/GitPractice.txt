@@ -307,3 +307,74 @@
 
 24) git checkout -   // takes to the previous branch 
 
+                                         Commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert commithash
+
+5) git reflog
+
+6) git stash 
+
+7) git stash pop
+
+8) git remote update --prune
+
+9) git log --decorate --graph --oneline 
+
+10) git bisect start 
+
+11) git bisect bad 
+
+12) git bisect good 
+
+13) git branch -vv 
+
+14) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
+15) git branch -vv | awk '/: gone]/{print$1}'
+
+16) git reset --hard origin/main 
+
+17) git log -S "Changed text"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
