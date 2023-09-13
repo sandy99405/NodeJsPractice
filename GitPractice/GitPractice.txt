@@ -369,3 +369,41 @@
 
 30) git checkout -
 
+31) git config --global help.autocorrect 0
+
+32) git config --global help.autocorrect 1
+
+
+
+                           precise commands 
+
+1) git remote -v 
+
+2) git grep --help 
+
+3) git grep search-word
+     
+     // by default grep uses POSIX Regex
+
+4) git grep 'main\(.+\)'  //if we wanted to find calls to main and we wanted to make sure that there was atleast one character inside the call to main 
+
+    // To turn on Eexteded regex 
+
+5) git grep -E main\(.+\)     // for windows donot use 'main\(.+\)'
+
+6) git grep -l -E main\(.+\)               // the most useful option is -l , this shows just the file names that have the specified text in them
+
+7) git grep -l -E main\(.+\) > TextFile.txt       //  this is in windows and only to copy the output into a textfile 
+
+8) git grep -l -E main\(.+\) -- directoryName            // specify the directory that you want to search with --directoryName
+
+9) git grep -l -E main\(.+\) -- *.py
+
+10) echo git grep -l -E main\(.+\) -- *.py
+
+11) git grep -L -E main\(.+\) -- *.py           // -L is to find files that dont match pirticular patterns
+
+    //this above command is to atch the .py files that dont call main 
+
+
+12)  
