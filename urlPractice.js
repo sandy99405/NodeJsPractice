@@ -9,3 +9,11 @@ app.get('/app/data',function(req,res){
       };
       res.json(contentData)
 }).listen(2003)
+
+var http = require('http')
+
+http.createServer(function(req,res){
+         res.writeHead(200,{'Content-type':'text/html'})
+         res.write("This is the head");
+         res.end()
+}).listen(2003)
