@@ -1,12 +1,11 @@
-var express = require('express')
+var express = express()
 
-var app = express();
+var app = express()
 
-app.get('/get/data',function(req,res){
-        const reqData = {
-              message : "New mesage",
-              data : [1,2,3,4,5]
-        };
-        res.json(responseData)  
-}).listen(2001)
-
+app.get('/app/data',function(req,res){
+      const contentData = {
+           message : "This is a message from node js",
+           data : [1,2,3,4,5]
+      };
+      res.json(contentData)
+}).listen(2003)
