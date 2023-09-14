@@ -373,7 +373,7 @@
 
 32) git config --global help.autocorrect 1
 
-33) git --allow-empty -m "No-ops commit"
+33) git commit --allow-empty -m "No-ops commit"
 
 
 
@@ -573,4 +573,42 @@ Delete submodule
 14) git stash pop 
 
 15) git stash list 
+
+16) git branch -vv 
+
+17) git branch -vv | awk '/: gone]/{print$1}'
+
+18) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
+19) git bisect start 
+
+20) git bisect bad 
+
+21) git bisect good 
+
+22) git reset --hard origin 
+
+23) git checkout -b "new branch"
+
+24) git checkout -
+
+25) git commit --set-upstream -m "Setting upstream for a new branch"
+
+26) git rev-list --count main 
+
+27) git grep 
+
+28) git grep -l -E main\(.+\) 
+
+29) git grep -L -E main\(.+\)
+
+30) git grep -L -E main\(.+\) -- directoryName
+
+31) git rebase -i origin/main 
+
+32) git rebase --continue 
+
+33) git rebase --abort 
+
+34) git commit --allow-empty -m "NO ops commit"
 
