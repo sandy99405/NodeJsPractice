@@ -651,3 +651,25 @@ Delete submodule
 
 16) git stash pop 
 
+17) git bisect start 
+
+18) git bisect bad 
+
+19) git bisect good 
+
+20) git reset --hard origin/main
+
+21) git push --force 
+
+22) git checkout -b "New-branch"
+
+23) git commit --allow-empty -m "No-ops commit"
+
+24) git rev-list --count main
+
+25) git config --global help.autocorrect 0
+
+26) git config --global help.autocorrect 1
+
+27) 
+
