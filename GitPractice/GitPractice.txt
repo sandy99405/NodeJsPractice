@@ -671,5 +671,25 @@ Delete submodule
 
 26) git config --global help.autocorrect 1
 
-27) 
+27) git push --set-upstream main 
+
+28) git grep -i -n key-wrod 
+
+29) git grep -l -E main\(.+\) -- *.py 
+
+30) git rebase -i origin/main 
+
+31) git rebase --continue 
+
+32) git rebase --abort 
+
+33) git config feature.manyfiles 1
+
+34) git checkout - 
+
+35) git remote -v 
+
+36) git init empty 
+
+37) git diff --staged 
 
