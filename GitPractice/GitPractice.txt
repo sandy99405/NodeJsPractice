@@ -693,3 +693,8 @@ Delete submodule
 
 37) git diff --staged 
 
+                                   New command 
+
+git rebase -i --root           // It helps to operate when you didn't create any empty or no-ops commit at the beginning(see video #029)
+
+
