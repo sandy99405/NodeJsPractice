@@ -759,6 +759,16 @@ git rebase -i --root           // It helps to operate when you didn't create any
 
 29) git config --global help.autocorrect 0
 
-30) git 
+30) git config feature.manyFile 1
 
+31) git push --force 
 
+32) git checkout -b "nw-branch"
+
+33) git checkout -
+
+34) git rebase --root 
+
+35) git commit --allow-empty -m 
+
+36) git diff --staged 
