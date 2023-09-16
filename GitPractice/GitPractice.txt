@@ -729,3 +729,30 @@ git rebase -i --root           // It helps to operate when you didn't create any
 
 14) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
 
+15) git bisect start 
+
+16) git bisect bad 
+
+17) git bisect good 
+
+18) git remote update --prune 
+
+19) git reset --hard origin/main 
+
+20) git remote -v 
+
+21) git grep -i 
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) -- '*.py'
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git 
+
+
