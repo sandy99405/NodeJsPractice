@@ -753,6 +753,12 @@ git rebase -i --root           // It helps to operate when you didn't create any
 
 26) git rebase --abort 
 
-27) git 
+27) git commit --set-upstream -m "Another commit"
+
+28) git config --global help.autocorrect 1
+
+29) git config --global help.autocorrect 0
+
+30) git 
 
 
