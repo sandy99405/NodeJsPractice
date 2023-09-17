@@ -772,3 +772,10 @@ git rebase -i --root           // It helps to operate when you didn't create any
 35) git commit --allow-empty -m 
 
 36) git diff --staged 
+
+
+                                        New commands 
+
+git status --ignored       / / shows ignored files aswell
+
+git push -4   , git pull -4   // forces git to use ipv4
