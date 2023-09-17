@@ -867,4 +867,14 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 42) git feature.manyFiles 1
 
-43) git 
+43) git submodule add "http//:github.com/sandy9904"
+
+44) git clone empty empty-clone --recursive 
+
+45) git submodule update --init 
+
+46) git submodule update --init --recursive 
+
+47) git rm /submodule_name 
+
+48) git tag -l
