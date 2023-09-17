@@ -855,4 +855,16 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 36) git init x 
 
-37) 
+37) git grep -i -n 'keyword'
+
+38) git grep -l -E main\(.+\)
+
+39) git grep -L -E main\(.+\) -- "*.py"
+
+40) git remote -v 
+
+41) git remote update --prune 
+
+42) git feature.manyFiles 1
+
+43) git 
