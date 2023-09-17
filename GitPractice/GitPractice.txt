@@ -878,3 +878,5 @@ git push -4   , git pull -4   // forces git to use ipv4
 47) git rm /submodule_name 
 
 48) git tag -l
+
+49) waiting fo rthe next.....
