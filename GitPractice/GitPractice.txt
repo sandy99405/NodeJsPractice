@@ -779,3 +779,14 @@ git rebase -i --root           // It helps to operate when you didn't create any
 git status --ignored       / / shows ignored files aswell
 
 git push -4   , git pull -4   // forces git to use ipv4
+
+
+                                        commands daily practice 
+
+1) git add -A 
+
+2) git commit -m -a "New commit"
+
+3) git config --global alias.ac  "!git add -A && git commit -m"
+
+4) git 
