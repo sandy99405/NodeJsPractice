@@ -842,3 +842,17 @@ git push -4   , git pull -4   // forces git to use ipv4
 29) git rebase --root 
 
 30) git commit -m --allow-empty "No-ops commit"
+
+31) git rev-list --count main 
+
+32) git ammend commithash 
+
+33) git config --global help.autocorrect 1
+
+34) git config --global help.autocorrect 0 
+
+35) git diff --staged 
+
+36) git init x 
+
+37) 
