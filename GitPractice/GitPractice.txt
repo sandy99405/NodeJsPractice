@@ -942,3 +942,25 @@ git push -4   , git pull -4   // forces git to use ipv4
 27) git init localRep 
 
 28) git rebase --continue 
+
+29) git rebase --abort
+
+30) git grep -i -n "The latest commit"
+
+31) git grep -l -E main\(.+\)
+
+32) git grep -L -E main\(.+\)
+
+33) git submodule add "repo"
+
+34) git clone empty empty-clone --recursive
+
+35) git submodule update -- init 
+
+36) git submodule update --init --recursive 
+
+37) git rm submodule_name/
+
+
+
+
