@@ -880,3 +880,10 @@ git push -4   , git pull -4   // forces git to use ipv4
 48) git tag -l
 
 49) waiting fo rthe next.....
+
+                // after adding a File, if you use the command "git diff --staged" in windows , linux or mingw64 , if the mode is 100755, the file added is executable
+                // If it is 100644, the file is non-executable file  
+                // but chmod cannot be used in windows so u need to use icacls or just use mingw64 which is linux bash 
+
+
+         
