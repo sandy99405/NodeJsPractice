@@ -961,6 +961,31 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 37) git rm submodule_name/
 
+38) git checkout - 
+
+39) git checkout -b "New branch"
+
+40) git config feature.manyFiles 1
+
+41) time git status 
+
+42) git show 
+
+43) git diff --staged 
+
+44) git config help.autocorrect 1
+
+45) git config help.autocorrect 0 
+
+46) git push -4 
+
+47) git pull -4
+
+48) git tag -l 
+
+49) git push --force 
+
+50) git ammend commithash 
 
 
 
