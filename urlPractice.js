@@ -1,4 +1,4 @@
-var express = require('express')
+/* var express = require('express')
 
 var app = express();
 
@@ -8,4 +8,6 @@ app.use('/app/data',function(req,res){
                 data : [1,2,3,4,5]
         }
         res.json(contentData)
-}).listen(3000)
+}).listen(3000) */
+
+
