@@ -1058,3 +1058,19 @@ git push -4   , git pull -4   // forces git to use ipv4
 33) git push --set-upstream origin/main
 
 34) git config --global help.autocorrect 1
+
+35) git config --global help.autocorrect 0
+
+36) git config feature.manyFiles 1
+
+37) git submodule add "rep_name"
+
+38) git clone empty empty-clone2 --recursive
+
+39) git submodule update --init 
+
+40) git submodule update --init --recursive
+
+41) git rm submodule_name/
+
+42) 
