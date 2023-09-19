@@ -988,4 +988,73 @@ git push -4   , git pull -4   // forces git to use ipv4
 50) git ammend commithash 
 
 
+                                             git commands practice 
 
+
+1) git add -A 
+
+2) git commit -a -m "First commit"
+
+3) git config --global alias.ac "!git add -A && commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git log --decorate --graph -oneline 
+
+8) git log -S "Changed text"
+
+9) git branch -vv 
+
+10) git branch -vv | awk '/: gone]/{print$1} | xargs git branch -d
+
+11) git branch -vv | awk '/: gone]/{print$1}'
+
+12) git stash save "Saveing to stash"
+
+13) git stash apply stash{0}
+
+14) git stash list 
+
+15) git stash pop 
+
+16) git rev-list --count main 
+
+17) git bisect start 
+
+18) git bisect good
+
+19) git bisect bad 
+
+20) git reset --hard origin/main 
+
+21) git chekout -b "New branch"
+
+22) git checkout - 
+
+23) git rebase -i origin/main  
+
+24) git rebase --continue 
+
+25) git rebase --abort 
+
+26) git rebase -i root 
+
+27) git grep -i -n "keyword"
+
+28) git grep -l -E main\(.+\)
+
+29) git grep -L -E main\(.+\)  -- '*.py'
+
+30) git ammend commithah 
+
+31) git push -4
+
+32) git pull - 
+
+33) git push --set-upstream origin/main
+
+34) git config --global help.autocorrect 1
