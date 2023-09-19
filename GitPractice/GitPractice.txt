@@ -1073,4 +1073,22 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 41) git rm submodule_name/
 
-42) 
+42) git remote -v 
+
+43) git commit -m --allow-empty "No-ops commit"
+
+44) git init x
+
+45) git push --force 
+
+46) git tag -l 
+
+47) git diff --staged 
+
+48) git show 
+
+49) time git status 
+
+50) git remote update --prune 
+
+                                   
