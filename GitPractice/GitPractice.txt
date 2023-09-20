@@ -1174,3 +1174,23 @@ git push -4   , git pull -4   // forces git to use ipv4
 40) git submodule update --init --recursive 
 
 41) git rm submodule_name/
+
+42) git rev-list --count main 
+
+43) git remote update --prune 
+
+44) git remote -v 
+
+45) git init empty_repo 
+
+46) git show 
+
+47) git diff --staged 
+
+48) time git status 
+
+49) git tag -l 
+
+50) git commit -m --allow-empty "No-ops commit"
+
+ 
