@@ -1129,3 +1129,23 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 18) git bisect bad 
 
+19) git reset --hard origin/main
+
+20) git config --global help.autocorrect 0
+
+21) git config --global help.autocorrect 1 
+
+22) git rebase -i origin/main 
+
+23) git rebase --continue
+
+24) git rebase --abort 
+
+25) git rebase -i root 
+
+26) git grep -i -n "keyword"
+
+27) git grep -l -E main\(.+\)
+
+28) git grep -L -E main\(.+\) -- "*.py"
+
