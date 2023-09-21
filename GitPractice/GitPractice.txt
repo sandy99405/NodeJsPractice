@@ -1193,4 +1193,14 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 50) git commit -m --allow-empty "No-ops commit"
 
- 
+                                          // New commands 
+
+51) git worktree add 
+
+52) git worktree list 
+
+53) git worktree remove 
+
+
+                                   commands prcatice 
+
