@@ -1234,3 +1234,26 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 15) git bisect start 
 
+16) git bisect good
+
+17) git bisect bad 
+
+18) git reset --hard origin/main 
+
+19) git remote update --prune 
+
+20) git config --global alias.ac "!git add -A && git commit -m"
+
+21) git config --global help.autocorrect 1
+
+22) git config --global help.autocorrect 0
+
+23) git checkout -
+
+24) git checkout -b "New_branch"
+
+25) git push --force 
+
+26) git push --set-upstream origin/main 
+
+27) git push -4
