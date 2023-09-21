@@ -1305,3 +1305,9 @@ git push -4   , git pull -4   // forces git to use ipv4
 50) git rev-list --count main 
 
 
+                                    New commands 
+1) git worktree add 
+
+2) git worktree remove 
+
+3) git worktree list 
