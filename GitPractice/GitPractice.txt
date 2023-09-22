@@ -1383,4 +1383,30 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 34) git pull -4
 
-35) git 
+35) time git status 
+
+36) git diff --staged 
+
+37) git tag -l 
+
+38) git checkout - 
+
+39) git checkout -b "new branch"
+
+40) git submodule add url
+
+41) git clone empty empty-clone2 recursive 
+
+42) git submodule update --init 
+
+43) git submodule update --init --recursive 
+
+44) git rm submodule/
+
+45) git init empty_repo 
+
+46) git remote -v 
+
+47) git commit -m --allow-empty "No-ops commit"
+
+48) git 
