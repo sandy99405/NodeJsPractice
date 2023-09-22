@@ -1369,4 +1369,18 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 27) git grep -L -E main\(.+\) -- "*.py"
 
-28) git 
+28) git config feature.manyFiles 1
+
+29) git config --global help.autocorrect 1
+
+30) git config --global help.autocorrect 0
+
+31) git push --force 
+
+32) git push -4 
+
+33) git push --set-upstream origin/main 
+
+34) git pull -4
+
+35) git 
