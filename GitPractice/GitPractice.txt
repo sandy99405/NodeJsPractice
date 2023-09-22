@@ -1339,3 +1339,34 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 12) git stash pop 
 
+13) git branch -vv 
+
+14) git branch -vv | awk '/: gone]/{print$1}'
+
+15) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
+16) git bisect start 
+
+17) git bisect bad 
+
+18) git bisect good 
+
+19) git reset --hard origin/main 
+
+20) git rev-list --count main 
+
+21) git rebase -i origin/main 
+
+22) git rebase --continue 
+
+23) git rebase --abort 
+
+24) git rebase -i root 
+
+25) git grep -i -n "Keyword"
+
+26) git grep -l -E main\(.+\)
+
+27) git grep -L -E main\(.+\) -- "*.py"
+
+28) git 
