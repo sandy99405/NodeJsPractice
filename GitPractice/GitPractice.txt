@@ -1524,3 +1524,9 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 50) git ammend commithash 
 
+51) git worktree add 
+
+52) git worktree list 
+
+53) git worktree remove 
+
