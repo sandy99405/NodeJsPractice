@@ -1522,4 +1522,5 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 49) git log --decorate --online --graph 
 
-50) git 
+50) git ammend commithash 
+
