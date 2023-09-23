@@ -1420,3 +1420,106 @@ git push -4   , git pull -4   // forces git to use ipv4
 52) git worktree list 
 
 53) git worktree remove 
+
+
+                                             git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit of the day"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git branch -vv
+
+8) git branch -vv | awk '/: gone]/{print$1}'
+
+9) git branch -vv | awk '/: gone]/{print$1}' | xargs git branch -d 
+
+10) git stash save "New stash saved"
+
+11) git stash apply stash{0}
+
+12) git stash list 
+
+13) git stash pop 
+
+14) git bisect start 
+
+15) git bisect good 
+
+16) git bisect bad 
+
+17) git reset --hard origin/main 
+
+18) git remote update --prune 
+
+19) git rev-list --count main 
+
+20) git checkout - 
+
+21) git checkout -b "new_branch"
+
+22) git remote -v 
+
+23) git rebase -i origin/main 
+
+24) git rebase --continue 
+
+25) git rebase --abort 
+
+26) git rebase -i root 
+
+27) git grep -i -n "keyword"
+
+28) git grep -l -E main\(.+\)
+
+29) git grep -L -E main\(.+\) -- "*.py"
+
+30) git config --global help.autocorrect 1
+
+31) git config --global help.autocorrect 0
+
+32) git config feature.manyFiles 1
+
+33) git push --force origin/main 
+
+34) git push -4
+
+35) git pull -4 
+
+36) git push --set-upstream origin/main 
+
+37) git commit -m --allow-empty "No-ops commit"
+
+38) git submodule add sub_url
+
+39) git clone empty empty-clone2 --recursive 
+
+40) git submodule update --init 
+
+41) git submodule update --init --recursive 
+
+42) git rm sub_url/
+
+43) git init empty_repo 
+
+44) git diff --staged 
+
+45) git tag -l 
+
+46) git show 
+
+47) time git status  
+
+48) git log -S "text changed"
+
+49) git log --decorate --online --graph 
+
+50) git 
