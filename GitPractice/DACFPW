@@ -128,12 +128,12 @@ v-27)
 
 v-28)
 
-1) hostpad /root/Downloads/fake-ap/hostapd.conf -B 
+27) hostpad /root/Downloads/fake-ap/hostapd.conf -B 
 
-2) tshark -i wlan0 -w royal-wifi.cap
+28) tshark -i wlan0 -w royal-wifi.cap
 
-3) wireshark 
+29) wireshark 
 
-4)
+30) 
 
 
