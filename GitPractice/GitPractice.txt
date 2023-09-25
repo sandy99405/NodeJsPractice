@@ -1694,3 +1694,31 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 27) git rebase -i root
 
+28) git push --force origin/main 
+
+29) git push -4
+
+30) git push --set-upstream origin/main 
+
+31) git pull -4
+
+32) git checkout -
+
+33) git checkout -b "New_branch"
+
+34) git submodule add url
+
+35) git clone empty empty-clone2 --recursive
+
+36) git submodule update --init 
+
+37) git submoudle update --init --recursive 
+
+38) git rm submodule_name/
+
+39) git diff --staged 
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
+
