@@ -1722,3 +1722,26 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 41) git config --global help.autocorrect 0
 
+42) git config feature.manyFiles 1
+
+43) git tag -l 
+
+44) git commit -m --allow-empty "No-ops commit"
+
+45) git show 
+
+46) time git status
+
+47) git ammend commithash
+
+48) git init empty_repo
+
+49) git remote -v
+
+50) git remote update --prune
+
+51) git worktree add
+
+52) git worktree remove
+
+53) git worktree list 
