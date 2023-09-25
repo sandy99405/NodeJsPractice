@@ -1675,3 +1675,22 @@ git push -4   , git pull -4   // forces git to use ipv4
 17) git bisect good 
 
 18) git bisect bad 
+
+19) git reset --hard origin/main 
+
+20) git rev-list --count main 
+
+21) git grep -i -n "keyword"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root
+
