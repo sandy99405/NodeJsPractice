@@ -229,4 +229,18 @@ v-42)
 
 10) bash fluxion.sh
 
-11) 
+section -8
+
+v-46)
+
+1) apt-get update 
+
+2) apt-get installl hastapd-wpe
+
+3) leafpad /etc/hostapd-wpe/hostapd-wpe.conf 
+
+4) service network-manager stop
+
+5) hostapd-wpe /etc/hostapd-wpe/host-wpe.conf
+
+6)  
