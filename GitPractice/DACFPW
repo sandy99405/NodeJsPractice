@@ -243,4 +243,10 @@ v-46)
 
 5) hostapd-wpe /etc/hostapd-wpe/host-wpe.conf
 
-6)  
+v-47)
+
+6) asleap --help
+
+7) asleap -C a5:5e:3a:5f:4b:d8:db:ff -R ee:25:4c:8b:84:f8:38:9b:4a:a2:ad:e3:66:87:a3:b7:f1:ba:ba:f2:b0:36:fa:cd -W /root/wordlist
+
+8) 
