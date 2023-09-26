@@ -303,3 +303,8 @@ v-60)
 
 18) iptables -t nat --flush
 
+v-60)
+
+19) ./mitmdump --transparent --replace 
+
+20) 
