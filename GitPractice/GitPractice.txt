@@ -1821,3 +1821,36 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 36) git checkout -b "new_branch"
 
+37) git commit -m --allow-empty "No-ops commit"
+
+38) git diff --staged 
+
+39) git config feature.manyFiles 1
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
+
+42) git push --force origin/main 
+
+43) git push -4 
+
+44) git pull -4 
+
+45) git push --set-upstream origin/main
+
+46) git tag -l 
+
+47) git show
+
+48) time git status 
+
+49) git ammend commithash
+
+50) git rm submodule_name/
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
