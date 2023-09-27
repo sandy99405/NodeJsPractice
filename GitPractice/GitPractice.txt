@@ -1900,3 +1900,66 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 21) git remote -v1
 
+22) git init empty_repo 
+
+23) git rebase -i origin/main 
+
+24) git rebase --continue
+
+25) git rebase --abort 
+
+26) git rebase -i root 
+
+27) git grep -i -n "Keyword"
+
+28) git grep -l -E main\(.+\)
+
+29) git grep -L -E main\(.+\) -- "*.py"
+
+30) git config --global help.autocorrect 1
+
+31) git config --global help.autocorrect 0
+
+32) git submodule add url
+
+33) git clone empty empty_clone --recursive 
+
+34) git submodule update --init 
+
+35) git submodule update --init --recursive 
+
+36) git rm submoudle_name/
+
+37) git checkout -
+
+38) git checkout -b "new_branch"
+
+39) git rev-list --count main 
+
+40) git diff --staged 
+
+41) git show 
+
+42) time git status 
+
+43) git config feature.manyFiles 1
+
+44) git commit -m --allow-empty "No-ops commit"
+
+45) git push --force origin/main 
+
+46) git push --set-upstream origin/main 
+
+47) git push -4 
+
+48) git pull -4 
+
+49) git tag -l 
+
+50) git ammend commithash
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
