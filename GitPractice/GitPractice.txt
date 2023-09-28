@@ -1963,3 +1963,46 @@ git push -4   , git pull -4   // forces git to use ipv4
 52) git worktree remove 
 
 53) git worktree list 
+
+                                                                 git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "First commit of the day"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git log -S "changed text"
+
+8) git log --decorate --oneline --graph 
+
+9) git stash save "stash saved"
+
+10) git stash apply stash{0}
+
+11) git stash list 
+
+12) git stash pop 
+
+13) git bisect start 
+
+14) git bisect good 
+
+15) git bisect bad 
+
+16) git branch -vv 
+
+17) git branch -vv | '/: gone]/{print$1}'
+
+18) git branch -vv | '/: gone]/{print$1}' | xargs git branch -d 
+
+19) git reset --hard origin/main 
+
+20) git remote update --prune 
+
