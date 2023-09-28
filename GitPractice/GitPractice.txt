@@ -2048,3 +2048,27 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 41) git init empty_repo 
 
+42) git ammend commithash
+
+43) git tag -l 
+
+44) git config --global help.autocorrect 1
+
+45) git config --global help.autocorrect 0 
+
+46) git config feature.manyFiles 1
+
+47) time git status 
+
+48) git checkout -b "new_branch"
+
+49) git checkout - 
+
+50) git show 
+
+51) git worktree add 
+
+52) git worktree list 
+
+53) git worktree remove 
+
