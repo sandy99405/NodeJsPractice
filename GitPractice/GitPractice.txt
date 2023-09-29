@@ -2128,3 +2128,28 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 27) git grep -L -E main\(.+\) -- "*.py"
 
+28) git submodule add url 
+
+29) git clone empty empty-clone --recursive 
+
+30) git submodule update --init 
+
+31) git submodule update --init --recursive 
+
+32) git rm submodule_name/ 
+
+33) git checkout - 
+
+34) git checkout -b "new_branch"
+
+35) git push --force origin/main 
+
+36) git push --set-upstream origin/main 
+
+37) git push -4 
+
+38) git pull -4 
+
+39) git diff --staged 
+
+40) git show 
