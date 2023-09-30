@@ -2223,4 +2223,32 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 20) git remote update --prune 
 
-21) 
+21) git checkout - 
+
+22) git checkout -b "New_branch"
+
+23) git rebase -i origin/main 
+
+24) git rebase --continue 
+
+25) git reabse --abort 
+
+26) git rebase -i root 
+
+27) git grep -i -n "kwyword"
+
+28) git grep -l -E main\(.+\)
+
+29) git grep -L -E main\(.+\) -- "*.py"
+
+30) git submodule add url 
+
+31) git clone empty empty-clone2 --recursive 
+
+32) git submodule update --init 
+
+33) git submodule update --init --recursive 
+
+34) git rm submodule_name/
+
+35) 
