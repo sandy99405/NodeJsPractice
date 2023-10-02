@@ -2463,5 +2463,15 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 31) git config feature.manyFiles 1
 
-32) git 
+32) git submodule add url 
+
+33) git clone empty empty-clone2 --recursive 
+
+34) git submodule update --init 
+
+35) git submodule update --init --recursive 
+
+36) git rm submodule_name/
+
+
 
