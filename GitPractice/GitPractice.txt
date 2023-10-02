@@ -2473,5 +2473,39 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 36) git rm submodule_name/
 
+37) git commit -m --allow-empty "No-ops commit"
+
+38) git diff --staged 
+
+39) git show 
+
+40) time git status 
+
+41) git checkout - 
+
+42) git checkout -b "new_branch"
+
+43) git remote -v 
+
+44) git init empty_repo 
+
+45) git push --force origin/main 
+
+46) git push --set-upstream origin/main 
+
+47) git push -4 
+
+48) git pull -4 
+
+49) git tag -l 
+
+50) git ammend commithash 
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
 
 
