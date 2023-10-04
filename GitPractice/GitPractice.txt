@@ -2680,3 +2680,17 @@ git push -4   , git pull -4   // forces git to use ipv4
 30) git checkout -b "new_branch"
 
 31) git push --set-upstream origin/main 
+
+32) git push --force orign/main 
+
+33) git submodule add url 
+
+34) git clone empty empty_repo --recursive 
+
+35) git submodule update --init 
+
+36) git submodule update --init --recursive 
+
+37) git rm submodule_name/
+
+38) 
