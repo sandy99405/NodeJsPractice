@@ -2661,4 +2661,22 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 21) git log --decorte --oneline --gaph 
 
-22) git 
+22) git grep -i -n "keyword"
+
+23) git grep -l -E main\(.+\)
+
+24) git grep -L -E main\(.+\) -- "*.py"
+
+25) git rebse -i origin/main 
+
+26) git rebase --continue 
+
+27) git rebase --abort 
+
+28) git rebase -i root 
+
+29) git checkout - 
+
+30) git checkout -b "new_branch"
+
+31) git push --set-upstream origin/main 
