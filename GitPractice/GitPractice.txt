@@ -2617,3 +2617,48 @@ git push -4   , git pull -4   // forces git to use ipv4
 53) git worktree list 
 
 
+                                                  git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "first commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git remote update --prune 
+
+8) git branch -vv 
+
+9) git branch -vv | awk '/: gone]{print$1}'
+
+10) git branch -vv | awk '/: gone]{print$1}' | xargs git brach -d 
+
+11) git stash save "stash saved"
+
+12) git stash apply stash{0}
+
+13) git stash list 
+
+14) git stash pop 
+
+15) git bisect start 
+
+16) git bisect good 
+
+17) git bisect bad 
+
+18) git rev-list --count main 
+
+19) git --reset hard orign/main 
+
+20) git log -S "changed text"
+
+21) git log --decorte --oneline --gaph 
+
+22) git 
