@@ -2876,7 +2876,7 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 20) git remote update --prune 
 
-21) git rev-list coutn --main 
+21) git rev-list count --main 
 
 22) git grep -i -n "keyword"
 
@@ -2902,4 +2902,43 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 33) git rm submodule_name/ 
 
-34
+34) git push --force origin/main  
+
+35) git push --set-upstream origin/main 
+
+36) git push -4 
+
+37) git pull -4 
+
+38) git diff --staged 
+
+39) git tag -l 
+
+40) git remote -v 
+
+41) git checkout - 
+
+42) git checkout -b "nw_branch"
+
+43) git show
+
+44) time git status 
+
+45) git config feature.manyFiles 
+
+46) git config --global help.autocorrect 1
+
+47) git config --global help.autocorrect 0
+
+48) git ammend commithash
+
+49) git commit -m --allow-empty "No-ops commit"
+
+50) git init empty_repo 
+
+51) git worktree add 
+
+52) git worktree list 
+
+53) git worktree remove 
+
