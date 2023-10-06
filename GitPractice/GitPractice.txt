@@ -2896,4 +2896,10 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 30) git clone mepty empty_clone --recursive 
 
-31) git 
+31) git submodule update --init 
+
+32) git submodule update --init --recursive 
+
+33) git rm submodule_name/ 
+
+34
