@@ -2985,3 +2985,22 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 20) git remote update --prune 
 
+21) git push --force origin/main
+
+22) git push --set-upstream origin/main 
+
+23) git push -4 
+
+24) git pull -4 
+
+25) git grep -i -n "Key-word"
+
+26) git grep -l -E main\(.+\)
+
+27) git grep -L -E main\(.+\) -- "*.py"
+
+28) git rebase -i origin/main 
+
+29) git rebase --continue 
+
+30) git rebase --abort 
