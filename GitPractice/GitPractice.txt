@@ -3004,3 +3004,23 @@ git push -4   , git pull -4   // forces git to use ipv4
 29) git rebase --continue 
 
 30) git rebase --abort 
+
+31) git rebase -i root
+
+32) git rev-list --count main 
+
+33) git checkout - 
+
+34) git checkout -b "New_branch"
+
+35) git submodule add url
+
+36) git clone empty empty_clone --recursive
+
+37) git submodule update --init 
+
+38) git submodule update --init --recursive 
+
+39) git rm submodule_name/
+
+40) 
