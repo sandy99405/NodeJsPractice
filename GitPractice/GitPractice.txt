@@ -3123,3 +3123,38 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 35) git rm submodule_name/
 
+36) git remote -v 
+
+37) git init empty_repo 
+
+38) git diff --staged 
+
+39) git tag -l 
+
+40) time git status 
+
+41) git show 
+
+42) git push --force origin/main 
+
+43) git push --set-ustream origin/main 
+
+44) git push -4 
+
+45) git pull -4 
+
+46) git ammend commithash 
+
+47) git commit -m --allow-empty "No-ops commit"
+
+48) git config --global help.autocorrect 1
+
+49) git config --global help.autocorrect 0
+
+50) git config feature.manyFiles 1
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
