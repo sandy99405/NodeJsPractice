@@ -3073,7 +3073,7 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 10) git branch -vv | awk '/: gone]{print$1}'
 
-11) git branch -vv | awk '/: gone]{print$1}' | xargs gir branch -d 
+11) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
 
 12) git remote update --prune 
 
@@ -3221,3 +3221,48 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 30) git push -4 
 
+31) git pull -4 
+
+32) git checkout - 
+
+33) git checkout -b "new_branch"
+
+34) git submodule add url 
+
+35) git clone empty empty_clone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
+39) git init empty_repo 
+
+40) git remote -v 
+
+41) git diff --staged 
+
+42) git ammend commithash 
+
+43) git config --global help.autocorrect 1
+
+44) git config --global help.autocorrect 0
+
+45) git config feature.manyFiles 1
+
+46) git commit -m --allow-empty "No-ops commit"
+
+47) git rev-list --count main 
+
+48) git tag -l 
+
+49) time git status 
+
+50) git show 
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
