@@ -3549,4 +3549,46 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 31) git submodule update --init --recursive 
 
-32
+32) git rm submodule_name 
+
+33) git checkout - 
+
+34) git checkout -b "New_branch"
+
+35) git push --force origin/main 
+
+36) git push --set-upstream origin/main 
+
+37) git push -4
+
+38) git pull -4 
+
+39) git diff --staged 
+
+40) git show 
+
+41) time git status 
+
+42) git config feature.manyFiles 1
+
+43) git tag -l 
+
+44) git rev-list --count main 
+
+45) git ammend commithash 
+
+46) git commit -m --allow-empty "No-ops commit"
+
+47) git log --decorate --oneline --graph 
+
+48) git log -S "Text Changed"
+
+49) git remote -v
+
+50) git init empty_repo 
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
