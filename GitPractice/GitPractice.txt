@@ -3649,4 +3649,9 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 27) git grep -L -E main\(.+\) -- "*.py"
 
-28) git 
+28) git submodule add url 
+
+29) git clone empty empty_clone2 --recursive 
+
+30) git submodule update --init 
+
