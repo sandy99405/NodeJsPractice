@@ -3655,3 +3655,8 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 30) git submodule update --init 
 
+31) git submodule update --init --recursive 
+
+32) git rm submodule_name/
+
+33) 
