@@ -17,3 +17,14 @@ http.createServer(function(req,res){
       res.write("Hello world")
       res.end()
 }).listen(3000)
+
+
+var url = require('url')
+
+http.createServer(function(req,res){
+      res.writeHead(200,{'Content-type':'text/html'})
+      var q = url.parse(req.url,true).parse
+      var text = q.month + " " + q.year
+      res.write(text)
+      res.end()
+}).listen(3000)
