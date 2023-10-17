@@ -4089,3 +4089,14 @@ git push -4   , git pull -4   // forces git to use ipv4
 29) git push --force origin/main 
 
 30) git push --set-upstream origin/main 
+
+31) git submodule add url 
+
+32) git clone empty empty_clone2 --recursive 
+
+33) git submodule update --init 
+
+34) git submodule update --init --recursive 
+
+35) git rm submodule_name/
+
