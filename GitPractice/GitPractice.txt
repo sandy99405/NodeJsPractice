@@ -4100,3 +4100,33 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 35) git rm submodule_name/
 
+36) git diif --staged 
+
+37) git push -4 
+
+38) git pull -4 
+
+39) git config feature.manyFiles 1
+
+40) time git status 
+
+41) git show 
+
+42) git tag -l 
+
+43) git checkout - 
+
+44) git checkout -b "new_branch"
+
+45) git config --global help.autocorrect 1
+
+46) git config --global help.autocorrect 0
+
+47) git ammend commithash 
+
+48) git commit -m --allow-empty "No-ops commit"
+
+49) git remote -v 
+
+50) git init empty_repo 
+
