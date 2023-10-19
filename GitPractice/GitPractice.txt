@@ -4307,3 +4307,17 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 30) git push -4 
 
+31) git pull -4 
+
+32) git commit -m --allow-empty "No-ops commit"
+
+33) git submodule add url 
+
+34) git clone empty empty_clone2 --recursive 
+
+35) git submodule update --init 
+
+36) git submodule update --init --recursive 
+
+37) git rm submodule_name/
+
