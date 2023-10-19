@@ -18,3 +18,13 @@ http.createServer(function(req,res){
         res.end()
 }).listen(3000)
 
+
+var url = require('url')
+
+http.createServer(function(req,res){
+      res.writeHead(200,{'Content-type':'text/html'})
+      var q = q.month + " " + q.year 
+      var text = url.parse(req.url,true).parse
+      res.write(text)
+      res.end()
+}).listen(3000)
