@@ -4420,3 +4420,19 @@ git push -4   , git pull -4   // forces git to use ipv4
 
 30) git push -4 
 
+31) git pull - 4 
+
+32) git checkout - 
+
+33) git checkout -b "new_branch"
+
+34) git submodule add url 
+
+35) git clone empty empty-clone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
