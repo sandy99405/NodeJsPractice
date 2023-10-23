@@ -4660,3 +4660,27 @@ new commands
 
 38) git rm submodule_name/
 
+39) git diff --staged 
+
+40) git tag -l 
+
+41) git show 
+
+42) git config --global help.autocorrect 1
+
+43) git config --global help.autocorrect 0
+
+44) git config feature.manyFiles 1
+
+45) time git status 
+
+46) git ammend commithash 
+
+47) git commit -m --allw-empty "No-ops commit"
+
+48) git remote -v 
+
+49) git init empty_repo 
+
+50) git push --set-upstream origin/main 
+
