@@ -4794,3 +4794,11 @@ new commands
 49) git init empty_repo
 
 50) git reset --hard origin/main 
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
+54) git show first-parent
