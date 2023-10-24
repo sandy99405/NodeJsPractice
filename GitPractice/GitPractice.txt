@@ -4692,3 +4692,53 @@ new commands
 
 54) git show first-parent 
 
+                                     
+                                     git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git log -S "text changed"
+
+8) git log --decorate --oneline --graph 
+
+9) git branch -vv 
+
+10) git branch -vv | awk '/: gone]{print$1}'
+
+11) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
+12) git bisect start 
+
+13) git bisect good 
+
+14) git bisect bad 
+
+15) git rev-list --count main 
+
+16) git stash save "stash saved"
+
+17) git stash apply stash{0}
+
+18) git stash list 
+
+19) git stash pop 
+
+20) git remote update --prune 
+
+21) git grep -i -n "key-word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) -- "*.py"
+
+24
