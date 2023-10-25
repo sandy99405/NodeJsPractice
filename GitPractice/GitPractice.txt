@@ -4802,3 +4802,47 @@ new commands
 53) git worktree list 
 
 54) git show first-parent
+
+
+                                             git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "new commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git log -S "Changed text"
+
+8) git log --decorate --oneline --graph 
+
+9) git stash save "stash saved"
+
+10) git stash apply stash{0}
+
+11) git stash list 
+
+12) git stash pop 
+
+13) git bisect start 
+
+14) git bisect good
+
+15) git bisect bad 
+
+16) git remote update --prune 
+
+17) git reset --hard origin/main 
+
+18) git branch -vv 
+
+19) git branch -vv | awk '/: gone]{print$1}
+
+20) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
