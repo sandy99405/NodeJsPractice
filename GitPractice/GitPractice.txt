@@ -4977,3 +4977,19 @@ new commands
 
 30) git rebase -i origin/main 
 
+31) git rebase --continue 
+
+32) git rebase --abort 
+
+33) git rebase -i root 
+
+34) git submodule add url 
+
+35) git clone empty empty_clone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
