@@ -5239,3 +5239,10 @@ new commands
 
 50) git remote -v 
 
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
+54) git show first-parent 
