@@ -5179,3 +5179,23 @@ new commands
 
 20) git remote update --prune 
 
+21) git rebase -i origin/main 
+
+22) git rebase --continue 
+
+23) git rebase --abort 
+
+24) git rebase -i root 
+
+25) git grep -i -n "key word"
+
+26) git grep -l -E main\(.+\)
+
+27) git grep -L -E main\(.+\) -- "*.py"
+
+28) git checkout - 
+
+29) git checkout -b "New_branch"
+
+30) git push --force origin/main 
+
