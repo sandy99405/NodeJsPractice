@@ -5433,3 +5433,31 @@ new commands
 
 36) git rm submodule_name/
 
+37) git checkout - 
+
+38) git checkout -b "new_branch"
+
+39) git diff --staged
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
+
+42) git config feature.manyFiles 1
+
+43) time git status
+
+44) git show 
+
+45) git tag -l 
+
+46) git ammend commithash
+
+47) git commit -m --allow-empty "No-ops commit"
+
+48) git remote -v
+
+49) git init empty_repo
+
+50) git rev-list --count main
+
