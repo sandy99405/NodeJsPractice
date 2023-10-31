@@ -1,1 +1,8 @@
 Hello SandyAdded new sentenceAdded new sentence
+
+
+
+
+User
+D:/git/organicmaps/3party/boost/libs/utility/include/boost/utility.hpp:15:10: fatal error: 'boost/utility/base_from_member.hpp' file not found
+#include <boost/utility/base_from_member.hpp>
