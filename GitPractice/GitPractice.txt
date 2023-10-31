@@ -5570,3 +5570,15 @@ new commands
 49) git config -m --allow-empty "No-ops commit"
 
 50) git rev-list --count main
+
+51) git worktree add
+
+52) git worktree remove
+
+53) git worktree list
+
+54) git show first-parent
+
+55) git config --global core.symlinks true
+
+56) git rm -r --chached submodule_name/folder(submodule_name)
