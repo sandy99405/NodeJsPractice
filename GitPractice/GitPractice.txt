@@ -5581,4 +5581,4 @@ new commands
 
 55) git config --global core.symlinks true
 
-56) git rm -r --chached submodule_name/folder(submodule_name)
+56) git rm -r --cached submodule_name/folder(submodule_name)
