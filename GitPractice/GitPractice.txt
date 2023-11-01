@@ -5469,7 +5469,7 @@ new commands
 
 54) git show first-parent
 
-
+                                                       git commands practice
 
 1) git add -A 
 
@@ -5582,3 +5582,47 @@ new commands
 55) git config --global core.symlinks true
 
 56) git rm -r --cached submodule_name/folder(submodule_name)
+
+
+
+                                                       git commands practice
+
+1) git add -A 
+
+2) git commit -a -m "new commit"
+
+3) git config alias.ac "!git add -A && git commit -m"
+
+4) git revert head
+
+5) git revert commithash
+
+6) git reflog
+
+7) git branch -vv
+
+8) git branch -vv | awk '/: gone]{print$1}'
+
+9) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -daily
+
+10) git log -S "text changed"
+
+11) git log --decorate --oneline --graph 
+
+12) git stash save "stash saved"
+
+13) git stash apply stash{0}
+
+14) git stash list 
+
+15) git stash pop 
+
+16) git bisect start
+
+17) git bisect good
+
+18) git bisect bad
+
+19) git remote update --prune
+
+20) git reset --hard origin/main
