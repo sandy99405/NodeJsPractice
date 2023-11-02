@@ -33,7 +33,7 @@ http.createServer(function(req,res){
 
 var fs = require('fs')
 
-fs.writeFile(function(err,data){
+fs.writeFile("DemoFile.html",function(err,data){
         http.createServer(function(req,res){
                 res.writeHead(200,{'Content-type':'text/html'})
                 res.write(data)
