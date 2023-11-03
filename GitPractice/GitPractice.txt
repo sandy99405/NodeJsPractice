@@ -5883,4 +5883,19 @@ new commands
 
 30) git push --set-upstream origin/main 
 
+31) git pull -4 
+
+32) git checkout - 
+
+33) git checkout -b "new_branch"
+
+34) git submodule add 
+
+35) git clone empty emptyClone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
 
