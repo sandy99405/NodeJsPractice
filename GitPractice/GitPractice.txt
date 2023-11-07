@@ -6133,3 +6133,27 @@ new commands
 
 38) git rm submodule_name/
 
+39) git diff --staged 
+
+40) git ammend commithash 
+
+41) git commit -m --allow-empty "No-ops commit"
+
+42) git remote -v 
+
+43) git init empty_repo 
+
+44) git config --global help.autocoreect 1
+
+45) git config --global help.autocorrect 0
+
+46) git config feature.manyFiles 1
+
+47) time git status 
+
+48) git show 
+
+49) git tag -L 
+
+50) git rev-list --count main 
+
