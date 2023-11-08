@@ -6233,3 +6233,20 @@ new commands
 
 30) git checkout -b "new_branch"
 
+31) git push --force origin/main 
+
+32) git push --set-upstream origin/main 
+
+33) git push -4 
+
+34) git pull -4 
+
+35) git submodule add url 
+
+36) git clone empty empty_clone2 --recursive 
+
+37) git submodule clone --init 
+
+38) git submodule clone --init -recursive 
+
+39) git rm submodule_name/
