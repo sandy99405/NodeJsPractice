@@ -6250,3 +6250,26 @@ new commands
 38) git submodule clone --init -recursive 
 
 39) git rm submodule_name/
+
+40) git diff --staged 
+
+41) git config --global help.autocorrect 1
+
+42) git config --global help.autocorrect 0 
+
+43) git config feature.manyFiles 1
+
+44) time git status 
+
+45) git show 
+
+46) git tag -l 
+
+47) git commit -m --allow-empty "No-ops commit"
+
+48) git ammend commithash 
+
+49) git remote -v 
+
+50) git init empty_repo 
+
