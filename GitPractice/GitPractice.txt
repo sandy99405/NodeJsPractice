@@ -6509,5 +6509,18 @@ new commands
 
 50) git rev-list --count main 
 
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
+54) git show first-parent 
+
+55) git rm -r --cached submodule_name/folder 
+
+56) git config --global core.symlinks true 
+
+57) git -c core.symlinks=true clone --recurse-submodules url
 
                     
