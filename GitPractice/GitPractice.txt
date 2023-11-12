@@ -6682,3 +6682,24 @@ new commands
 19) git remote update --prune
 
 20) git reset --hard origin/main
+
+21) git grep -i -n "key word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) -- "*.py"
+
+24) git rebasse -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git push -4 
+
+28) git push --force origin/main 
+
+29) git push --set-upstream origin/main 
+
+30) git pull -4 
+
