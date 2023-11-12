@@ -6703,3 +6703,17 @@ new commands
 
 30) git pull -4 
 
+31) git checkout - 
+
+32) git checkout -b "new_branch"
+
+33) git submodule add url 
+
+34) git clone empty empty_repo --recursive 
+
+35) git submodule update --init 
+
+36) git submodule update --init --recursive 
+
+37) git rm submodule_name/
+
