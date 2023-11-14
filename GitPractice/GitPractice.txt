@@ -6938,3 +6938,15 @@ new commands
 
 30) git push -4 
 
+31) git pull -4 
+
+32) git submodule add url 
+
+33) git clone empty empty_clone2 --recursive 
+
+34) git submodule update --init 
+
+35) git submodule update --init --recursive 
+
+36) git rm submodule_name/
+
