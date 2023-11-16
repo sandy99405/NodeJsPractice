@@ -7190,3 +7190,41 @@ new commands
 
 38) git rm submodule_name/
 
+39) git diff --staged 
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
+
+42) git config feature.manyFiles 1
+
+43) time git status 
+
+44) git show 
+
+45) git tag -l 
+
+46) git rev-list --count main 
+
+47) git amend commithash 
+
+48) git commit -m --allow-empty "No-ops commmit"
+
+49) git remote -v 
+
+50) git init empty_repo 
+
+51) git worktree add 
+
+52) git worktree list 
+
+53) git worktree remove 
+
+54) git show first-parent 
+
+55) git rm -r --cached submodule_name/folder
+
+56) git -c core.symlinks=true clone --recurse-submodules url 
+
+57) git config --global core.symlinks true 
+
