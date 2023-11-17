@@ -7333,3 +7333,17 @@ new commands
 
 50) git tag -L 
 
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
+54) git show firt-parent 
+
+55) git config --global core.symlinks true 
+
+56) git -c core.symlinks=true clone --recurse-submodules url 
+
+57) git rm -r --cached submodule_name/folder 
+
