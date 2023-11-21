@@ -7779,3 +7779,26 @@ new commands
 
 38) git rm submodule_name/
 
+39) git rev-list --count main
+
+40) git diff --staged
+
+41) git show
+
+42) git tag -l
+
+43) git config --global help.autocorrect 1
+
+44) git config --global help.autocorrect 0
+
+45) git config feature.manyFiles 1
+
+46) time git status
+
+47) git remote -v
+
+48) git init empty_repo
+
+49) git commit -m --allow-empty "No-ops commit"
+
+50) git amend commithash
