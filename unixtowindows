@@ -46,3 +46,10 @@ Internet [y|N|q|?]?
                      │     Local only                    │ 
                      │                    
 
+
+
+
+
+sandy@sandy-1-2:~$ dpkg -l | grep -E "postfix|exim|ssmtp"
+ii  postfix                                       3.8.1-2                                 amd64        High-performance mail transport agent
+
