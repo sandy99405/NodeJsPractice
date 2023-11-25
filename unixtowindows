@@ -22,3 +22,12 @@ Please choose the default operating mode for reportbug.
             unfamiliar with Debian's policies and operating procedures.
 
 Select mode: [novice] 
+
+
+
+
+Select mode: [novice] 
+Will reportbug often have direct Internet access? (You should answer yes to this question unless you know what you are
+doing and plan to check whether duplicate reports have been filed via some other channel.) [Y|n|q|?]? 
+
+
