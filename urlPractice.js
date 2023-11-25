@@ -10,7 +10,7 @@ app.use("/app/data",function(req,res){
        res.json(contentData)
 }).listen(3000)
 
-var http = require('http')
+/* var http = require('http')
 
 http.createServer(function(req,res){
        res.writeHead(200,{'Content-type':'text/html'})
@@ -18,3 +18,14 @@ http.createServer(function(req,res){
        res.end()
 }).listen(3000)
 
+
+
+var url = require('url')
+
+http.createServer(function(req,res){
+       res.writeHead(200,{'Content-type':'text/html'})
+       var q = url.parse(req.url,true).query
+       var text = q.month + " " + q.year
+       res.write(text)
+       res.end()
+}).listen(3000) */
