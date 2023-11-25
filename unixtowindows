@@ -61,3 +61,15 @@ Please enter the name of your proxy server. It should only use this parameter if
 argument should be formatted as a valid HTTP URL, including (if necessary) a port number; for example,
 http://192.168.1.1:3128/. Just press ENTER if you don't have one or don't know.
 
+
+
+
+
+sandy@sandy-1-2:~$ reportbug starlink-fits-java
+*** ERROR: "Ubuntu" BTS is currently unsupported.
+
+Please use "ubuntu-bug" (from the apport package) for reporting bugs in Ubuntu.
+
+You can report bugs to Debian by specifying  'bts debian' in your ~/.reportbugrc
+or by passing the -B debian option on the commandline (see reportbug(1)).
+
