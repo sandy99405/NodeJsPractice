@@ -19,7 +19,7 @@ http.createServer(function(req,res){
 }).listen(3000)
 
 
-/* 
+
 var url = require('url')
 
 http.createServer(function(req,res){
@@ -28,4 +28,6 @@ http.createServer(function(req,res){
        var text = q.month + " " + q.year
        res.write(text)
        res.end()
-}).listen(3000)  */
+}).listen(3000) 
+
+
