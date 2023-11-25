@@ -1,0 +1,8 @@
+sandy@sandy-1-2:~$ ipconfig
+Command 'ipconfig' not found, did you mean:
+  command 'ifconfig' from deb net-tools (2.10-0.1ubuntu3)
+  command 'iconfig' from deb ipmiutil (3.1.9-3)
+  command 'iwconfig' from deb wireless-tools (30~pre9-13.1ubuntu4)
+  command 'hipconfig' from deb hipcc (5.2.3-12)
+Try: sudo apt install <deb name>
+
