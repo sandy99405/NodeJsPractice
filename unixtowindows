@@ -53,3 +53,11 @@ Internet [y|N|q|?]?
 sandy@sandy-1-2:~$ dpkg -l | grep -E "postfix|exim|ssmtp"
 ii  postfix                                       3.8.1-2                                 amd64        High-performance mail transport agent
 
+
+
+
+
+Please enter the name of your proxy server. It should only use this parameter if you are behind a firewall. The PROXY
+argument should be formatted as a valid HTTP URL, including (if necessary) a port number; for example,
+http://192.168.1.1:3128/. Just press ENTER if you don't have one or don't know.
+
