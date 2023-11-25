@@ -73,3 +73,13 @@ Please use "ubuntu-bug" (from the apport package) for reporting bugs in Ubuntu.
 You can report bugs to Debian by specifying  'bts debian' in your ~/.reportbugrc
 or by passing the -B debian option on the commandline (see reportbug(1)).
 
+
+
+
+
+Select mode: [novice] 1
+Please choose the default interface for reportbug.
+
+1 text  A text-oriented console user interface
+
+2 gtk   A graphical (GTK+) user interface.
