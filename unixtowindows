@@ -83,3 +83,27 @@ Please choose the default interface for reportbug.
 1 text  A text-oriented console user interface
 
 2 gtk   A graphical (GTK+) user interface.
+
+
+
+
+
+
+
+sandy99@debian:~$ reportbug starlink-cdf-java
+*** Welcome to reportbug.  Use ? for help at prompts. ***
+Note: bug reports are publicly archived (including the email address of the submitter).
+Detected character set: UTF-8
+Please change your locale if this is incorrect.
+
+Using 'sandy99 <sandysandilya99@gmail.com>' as your from address.
+Getting status for starlink-cdf-java...
+Which of the following packages is the bug in?
+
+1 starlink-cdf-java      CDF table support for Starjava
+
+2 starlink-cdf-java-doc  CDF table support for Starjava (Javadoc)
+
+3 src:starjava-cdf       Source package
+
+Select one of these packages: 
