@@ -37,3 +37,12 @@ Internet [y|N|q|?]?
 
 
 
+   │ General mail configuration type:  │ 
+                     │                                   │ 
+                     │     No configuration              │ 
+                     │     Internet Site                 │ 
+                     │     Internet with smarthost       │ 
+                     │     Satellite system              │ 
+                     │     Local only                    │ 
+                     │                    
+
