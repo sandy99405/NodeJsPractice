@@ -6,3 +6,19 @@ Command 'ipconfig' not found, did you mean:
   command 'hipconfig' from deb hipcc (5.2.3-12)
 Try: sudo apt install <deb name>
 
+
+
+sandy@sandy-1-2:~$ sudo reportbug --configure
+Please choose the default operating mode for reportbug.
+
+1 novice    Offer simple prompts, bypassing technical questions.
+
+2 standard  Offer more extensive prompts, including asking about things that a moderately sophisticated user would be
+            expected to know about Debian.
+
+3 advanced  Like standard, but assumes you know a bit more about Debian, including "incoming".
+
+4 expert    Bypass most handholding measures and preliminary triage routines. This mode should not be used by people
+            unfamiliar with Debian's policies and operating procedures.
+
+Select mode: [novice] 
