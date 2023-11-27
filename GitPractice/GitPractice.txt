@@ -8058,3 +8058,50 @@ new commands
 57) git -c core.symlinks=true clone --recurse-submodules url
 
 58) git commit --amend
+
+
+
+                                                                            git commands practice
+
+
+1) git add -A
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git branch -vv
+
+5) git branch -vv | awk '/: gone]{print$1}'
+
+6) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+
+7) git log -S "text changed"
+
+8) git log --decorate --oneline --graph
+
+9) git revert head
+
+10) git revert commithash
+
+11) git reflog
+
+12) git remote update --prune
+
+13) git reset --hard origin/main
+
+14) git stash save "stash saved"
+
+15) git stash apply stash{0}
+
+16) git stash list 
+
+17) git stash pop
+
+18) git bisect start 
+
+19) git bisect good 
+
+20) git bisect bad 
+
+
