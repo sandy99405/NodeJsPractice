@@ -8177,3 +8177,69 @@ new commands
 56) git config --global core.symlinks true
 
 57) git show first-parent
+
+
+
+                                                                          git commands practice
+
+1) git add -A 
+
+2) git commit -a -m "new commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert commithash 
+
+5) git revert head
+
+6) git reflog
+
+7) git branch -vv
+
+8) git branch -vv | awk '/: gone]{print$1}'
+
+9) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+
+10) git stash save "stash saved"
+
+11) git stash apply stash{0}
+
+12) git stash list 
+
+13) git stash pop 
+
+14) git bisect start 
+
+15) git bisect good
+
+16) git bisect bad
+
+17) git log -S "text changed"
+
+18) git log --decorate --oneline --graph 
+
+19) git remote update --prune
+
+20) git reset --hard origin/main
+
+21) git checkout -
+
+22) git checkout -b "new_branch"
+
+23) git grep -i -n "key word"
+
+24) git grep -l -E main\(.+\)
+
+25) git grep -L -E main\(.+\) -- "*.py"
+
+26) git rebase -i origin/main
+
+27) git rebase --continue 
+
+28) git rebase --abort
+
+29) git rebase -i root
+
+30) git push --force origin/main
+
+
