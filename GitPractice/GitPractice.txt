@@ -8058,3 +8058,242 @@ new commands
 57) git -c core.symlinks=true clone --recurse-submodules url
 
 58) git commit --amend
+
+
+
+                                                                            git commands practice
+
+
+1) git add -A
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git branch -vv
+
+5) git branch -vv | awk '/: gone]{print$1}'
+
+6) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+
+7) git log -S "text changed"
+
+8) git log --decorate --oneline --graph
+
+9) git revert head
+
+10) git revert commithash
+
+11) git reflog
+
+12) git remote update --prune
+
+13) git reset --hard origin/main
+
+14) git stash save "stash saved"
+
+15) git stash apply stash{0}
+
+16) git stash list 
+
+17) git stash pop
+
+18) git bisect start 
+
+19) git bisect good 
+
+20) git bisect bad 
+
+21) git grep -i -n "Key word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) -- "*.py"
+
+24) git rebase -i origin/main
+
+25) git rebase --continue
+
+26) git rebase --abort
+
+27) git rebase -i root
+
+28) git checkout -
+
+29) git checkout -b "New_branch"
+
+30) git push --force origin/main
+
+31) git push --set-upstream origin/main 
+
+32) git push -4
+
+33) git pull -4
+
+34) git submodule add url
+
+35) git clone empty empty_repo --recursive
+
+36) git submodule update --init
+
+37) git submodule update --init --recursive
+
+38) git rm submodule_name/
+
+39) git diff --staged
+
+40) git show 
+
+41) git config --global help.autocorrect 1
+
+42) git config --global help.autocorrect 0
+
+43) git config featrue.manyFiles 1
+
+44) time git status 
+
+45) git rev-list --count main
+
+46) git tag -l
+
+47) git commit --allow-empty -m "No-ops commit"
+
+48) git remote -v
+
+49) git init empty_repo
+
+50) git amend commithash
+
+51) git worktree add
+
+52) git worktree list 
+
+53) git worktree remove
+
+54) git rm -r --cached submodule_name/folder
+
+55) git -c core.symlinks=true clone --recurse-submodules url
+
+56) git config --global core.symlinks true
+
+57) git show first-parent
+
+
+
+                                                                          git commands practice
+
+1) git add -A 
+
+2) git commit -a -m "new commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert commithash 
+
+5) git revert head
+
+6) git reflog
+
+7) git branch -vv
+
+8) git branch -vv | awk '/: gone]{print$1}'
+
+9) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+
+10) git stash save "stash saved"
+
+11) git stash apply stash{0}
+
+12) git stash list 
+
+13) git stash pop 
+
+14) git bisect start 
+
+15) git bisect good
+
+16) git bisect bad
+
+17) git log -S "text changed"
+
+18) git log --decorate --oneline --graph 
+
+19) git remote update --prune
+
+20) git reset --hard origin/main
+
+21) git checkout -
+
+22) git checkout -b "new_branch"
+
+23) git grep -i -n "key word"
+
+24) git grep -l -E main\(.+\)
+
+25) git grep -L -E main\(.+\) -- "*.py"
+
+26) git rebase -i origin/main
+
+27) git rebase --continue 
+
+28) git rebase --abort
+
+29) git rebase -i root
+
+30) git push --force origin/main
+
+31) git push --set-upstream origin/main
+
+32) git push -4
+
+33) git pull -4
+
+34) git submodule add url
+
+35) git clone empty empty_clone --recursive
+
+36) git submodule update --init
+
+37) git submodule update --init --recursive
+
+38) git rm submodule_name/
+
+39) git diff --staged
+
+40) git show 
+
+41) git config --global help.autocorrect 1
+
+42) git config --global help.autocorrect 0
+
+43) git config feature.manyFiles 1
+
+44) time git status
+
+45) git tag -l
+
+46) git remote -v
+
+47) git init empty_repo
+
+48) git rev-list --count main\
+
+49) git amend commithash 
+
+50) git commit -m --allow-empty "No-ops commit"
+
+51) git show first-parent
+
+52) git worktree add
+
+53) git worktree list 
+
+54) git worktree remove
+
+55) git config --global core.symlinks true
+
+56) git -c core.symlinks=true clone --recurse-submodules url
+
+57) git rm -r --cached submoduel_name/folder
+
+58) git commit --amend

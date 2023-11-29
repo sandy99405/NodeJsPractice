@@ -6,3 +6,104 @@ Command 'ipconfig' not found, did you mean:
   command 'hipconfig' from deb hipcc (5.2.3-12)
 Try: sudo apt install <deb name>
 
+
+
+sandy@sandy-1-2:~$ sudo reportbug --configure
+Please choose the default operating mode for reportbug.
+
+1 novice    Offer simple prompts, bypassing technical questions.
+
+2 standard  Offer more extensive prompts, including asking about things that a moderately sophisticated user would be
+            expected to know about Debian.
+
+3 advanced  Like standard, but assumes you know a bit more about Debian, including "incoming".
+
+4 expert    Bypass most handholding measures and preliminary triage routines. This mode should not be used by people
+            unfamiliar with Debian's policies and operating procedures.
+
+Select mode: [novice] 
+
+
+
+
+Select mode: [novice] 
+Will reportbug often have direct Internet access? (You should answer yes to this question unless you know what you are
+doing and plan to check whether duplicate reports have been filed via some other channel.) [Y|n|q|?]? 
+
+
+
+Do you have a "mail transport agent" (MTA) like Exim, Postfix or SSMTP configured on this computer to send mail to the
+Internet [y|N|q|?]? 
+
+
+
+   │ General mail configuration type:  │ 
+                     │                                   │ 
+                     │     No configuration              │ 
+                     │     Internet Site                 │ 
+                     │     Internet with smarthost       │ 
+                     │     Satellite system              │ 
+                     │     Local only                    │ 
+                     │                    
+
+
+
+
+
+sandy@sandy-1-2:~$ dpkg -l | grep -E "postfix|exim|ssmtp"
+ii  postfix                                       3.8.1-2                                 amd64        High-performance mail transport agent
+
+
+
+
+
+Please enter the name of your proxy server. It should only use this parameter if you are behind a firewall. The PROXY
+argument should be formatted as a valid HTTP URL, including (if necessary) a port number; for example,
+http://192.168.1.1:3128/. Just press ENTER if you don't have one or don't know.
+
+
+
+
+
+sandy@sandy-1-2:~$ reportbug starlink-fits-java
+*** ERROR: "Ubuntu" BTS is currently unsupported.
+
+Please use "ubuntu-bug" (from the apport package) for reporting bugs in Ubuntu.
+
+You can report bugs to Debian by specifying  'bts debian' in your ~/.reportbugrc
+or by passing the -B debian option on the commandline (see reportbug(1)).
+
+
+
+
+
+Select mode: [novice] 1
+Please choose the default interface for reportbug.
+
+1 text  A text-oriented console user interface
+
+2 gtk   A graphical (GTK+) user interface.
+
+
+
+
+
+
+
+sandy99@debian:~$ reportbug starlink-cdf-java
+*** Welcome to reportbug.  Use ? for help at prompts. ***
+Note: bug reports are publicly archived (including the email address of the submitter).
+Detected character set: UTF-8
+Please change your locale if this is incorrect.
+
+Using 'sandy99 <sandysandilya99@gmail.com>' as your from address.
+Getting status for starlink-cdf-java...
+Which of the following packages is the bug in?
+
+1 starlink-cdf-java      CDF table support for Starjava
+
+2 starlink-cdf-java-doc  CDF table support for Starjava (Javadoc)
+
+3 src:starjava-cdf       Source package
+
+Select one of these packages: 
