@@ -8739,3 +8739,27 @@ new commands
 
 38) git rm submoudle_name/
 
+39) git diff --staged 
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0 
+
+42) git config feature.manyFiles 1
+
+43) time git status 
+
+44) git tag -L 
+
+45) git show 
+
+46) git remote -v 
+
+47) git inti empty_repo 
+
+48) git ammend commithash 
+
+49) git commit -m --allow-empty "No-ops commit"
+
+50) git rev-list --count main 
+
