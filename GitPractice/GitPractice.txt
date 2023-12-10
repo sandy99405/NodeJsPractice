@@ -9296,3 +9296,23 @@ new commands
 
 20) git config --global alias.ac "!git add -A && git commit -m"
 
+21) git rev-list --count main 
+
+22) git grep -i -n "key word"
+
+23) git grep -l -E main(.+\)
+
+24) git grep -L -E main(.+\) -- "*.py"
+
+25) git rebase -i origin/main 
+
+26) git rebase --continue
+
+27) git rebase --abort 
+
+28) git rebase -i root 
+
+29) git checkout - 
+
+30) git checout -b "New_branch"
+
