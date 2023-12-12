@@ -9431,3 +9431,21 @@ new commands
 
 28) git rm submoduel_name/
 
+29) git diff --staged 
+
+30) git push --set-upstream origin master 
+
+31) git push --force origin master 
+
+32) git push -4 
+
+33) git pull -4
+
+34) git rebase -i origin master
+
+35) git rebase --continue
+
+36) git rebase --abort 
+
+37) git rebase -i root
+
