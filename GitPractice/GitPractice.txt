@@ -9449,3 +9449,29 @@ new commands
 
 37) git rebase -i root
 
+38) git checkout - 
+
+39) git checkout -b "new_branch"
+
+40) git rev-list --count main
+
+41) git remote -v 
+
+42) git init empty_repo
+
+43) git amend commithash
+
+44) git commit -m --allow-empty "No-ops commit"
+
+45) git tag -L
+
+46) git config --global help.autocorrect 1
+
+47) git config --global help.autocorrect 0
+
+48) git config feature.manyFiles 1
+
+49) git show 
+
+50) time git status
+
