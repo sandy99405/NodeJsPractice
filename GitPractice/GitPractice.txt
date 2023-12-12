@@ -9415,3 +9415,19 @@ new commands
 
 20) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
 
+21) git grep -i -n "kew_word"
+
+22) git grep -l -E main(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git submodule add url 
+
+25) git clone empty empty_clone2 --recursive 
+
+26) git submodule update --init
+
+27) git submodule update --init --recursive 
+
+28) git rm submoduel_name/
+
