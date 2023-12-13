@@ -28,3 +28,14 @@ http.createServer(function(req,res){
               res.write(text)
               req.end()
 }).listen(3000)
+
+
+var fs = require('fs')
+
+fs.writeFile(function(err,data){
+        http.createServer(function(req,res){
+                     res.writeHead(200,{'Content-type':'text/html'})
+                     res.write(data)
+                     return res.end()
+        }).listen(3000)
+})
