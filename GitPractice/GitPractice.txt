@@ -9596,3 +9596,29 @@ new commands
 
 37) git rm submodule_name/
 
+38) git diff --staged 
+
+39) git rev-list --count main
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
+
+42) git config feature.manyFiles 1
+
+43) git remote -v1
+
+44) git init empty_repo 
+
+45) time git status 
+
+46) git show 
+
+47) git tag -l
+
+48) git commit -m --allow-empty "No-ops commit"
+
+49) git ammend commithash
+
+50) git rebase -i root
+
