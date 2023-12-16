@@ -9758,3 +9758,48 @@ new commands
 57) git rm -r --cached submodule_name/
 
 58) git commit --amend 
+
+
+                                       
+                                                    git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git branch -vv 
+
+8) git branch -vv | awk '/: gone]{print$1}'
+
+9) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
+10) git stash save "stash saved"
+
+11) git stash apply stash{0}
+
+12) git stash list 
+
+13) git stash pop 
+
+14) git bisect start 
+
+15) git bisect good 
+
+16) git bisect bad 
+
+17) git remote update --prune 
+
+18) git reset --hard origin master 
+
+19) git log -S "text changed"
+
+20) git log --decorate --oneline --graph 
+
