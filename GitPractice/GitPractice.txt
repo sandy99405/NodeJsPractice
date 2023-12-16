@@ -9803,3 +9803,39 @@ new commands
 
 20) git log --decorate --oneline --graph 
 
+21) git grep -i -n "key_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root 
+
+28) git checkout - 
+
+29) git checkout -b "new_branch"
+
+30) git push --force origin main
+
+31) git push --set-upstream origin main 
+
+32) git push -4 
+
+33) git pull -4 
+
+34) git submodule add url 
+
+35) git clone empty empty_clone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
