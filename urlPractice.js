@@ -28,3 +28,13 @@ http.createServer(function(req,res){
           var text = q.month + q.year 
           res.write(text)
 }).listen(3000)
+
+var fs = require('fs')
+
+fs.writeFile(function(err,data){
+          http.createServer(function(req,res){
+                  res.writeHead(200,{'COntent-type':'text/html'})
+                  res.write(data)
+                  return res.end()
+          }).listen(3000)
+})
