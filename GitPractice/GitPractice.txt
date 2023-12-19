@@ -10161,3 +10161,22 @@ new commands
 
 20) git reset --hard origin master 
 
+21) git grep -i -n  "Kew_word"
+
+22) git grep -k -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin master
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root 
+
+28) git checkout - 
+
+29) git checkout -b "New_branch"
+
+30) git push --force origin master 
