@@ -10118,13 +10118,19 @@ new commands
 58) git commit --amend
 
 
+<<<<<<< HEAD
                                               git commands practice 
 
+=======
+
+                                                                         git commands practice 
+>>>>>>> cb16465424d3d3097002d5bfb8258af7330ce5b6
 
 1) git add -A 
 
 2) git commit -a -m "New commit"
 
+<<<<<<< HEAD
 3) git config --global alias.ac "!git add -A && git commit -m"
 
 4) git log -S "text changed"
@@ -10161,3 +10167,116 @@ new commands
 
 20) git reflog 
 
+=======
+3) git config --global alias.ac !git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog 
+
+7) git branch -vv 
+
+8) git branch -vv | awk '/: gone]{print$1}'
+
+9) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
+10) git log -S "text changed"
+
+11) git log --decorate --oneline --graph 
+
+12) git stash save "stash saved"
+
+13) git stash apply stash{0}
+
+14) git stash list 
+
+15) git stash pop 
+
+16) git bisect start 
+
+17) git bisect good 
+
+18) git bisect bad 
+
+19) git remote update --init 
+
+20) git reset --hard origin master 
+
+21) git grep -i -n  "Kew_word"
+
+22) git grep -k -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin master
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root 
+
+28) git checkout - 
+
+29) git checkout -b "New_branch"
+
+30) git push --force origin master 
+
+31) git push --set-upstream origin master 
+
+32) git push -4 
+
+33) git pull -4 
+
+34) git submodules add url
+
+35) git clone empty empty_clone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
+39) git diff --staged 
+
+40) git rev-list --count main 
+
+41) git config --global help.autocorrect 1
+
+42) git config --global help.autocorrect 0 
+
+43) git config feature.manyFiles 1
+
+44) time git status 
+
+45) git tag -L 
+
+46) git remote -v 
+
+47) git init emtpty_repo
+
+48) git commit -m --allow-empty "No-ops commit"
+
+49) git amend commithash 
+
+50) git show
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git wokrtree list 
+
+54) git show first-parent 
+
+55) git config --global core.symlinks true 
+
+56) git -c core.symlinks=true clone --recurse-submodules url
+
+57) git rm -r --cached submodule_name/
+
+58) git commit --amend
+>>>>>>> cb16465424d3d3097002d5bfb8258af7330ce5b6
