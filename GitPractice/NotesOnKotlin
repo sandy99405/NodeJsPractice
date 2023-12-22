@@ -7,3 +7,14 @@ override fun onCreate(savedInstanceState : Bundle?){
         profileId!!
     )
 }
+
+
+override fun onCreate(savedInstanceState : Bundle?){
+    super.onCreate(savedInstanceState)
+    (activityComponent as ActivityComponentImpl).inject(this)
+    profileId = intent.getIntExtra(NAVIGATION_PROFILE_ID_ATGUMENT_KEY, -1)
+    appLanguageActivityPresenter.handleOnCreate(
+        savedInstanceState?.retrieveLanguageFromSavedState() ?: intent.retrieveLanguageFromParams(),
+        profileId!!
+    )
+}
