@@ -25,7 +25,18 @@ override fun onCreate(savedInstanceState : Bundle?){
     (activityComponent as ActivityComponentImpl).inject(this)
     profileId = intent.getIntExtra(NAVIGATION_PROFILE_ID_ARGUMENT_KEY, -1)
     appLanguageActivityPresenter.handleOnCreate(
-        savedInstanceState?.retreiveLanguageFromSavedState() ?: intent.retrieveLnaguageFromParams(),
+        savedInstanceState?.retreiveLanguageFromSavedState() ?: intent.retrieveLanguageFromParams(),
+        profileId!!
+    )
+}
+
+
+override fun onCreate(savedInstanceState : Bundle?){
+    super.onCreate(savedInstanceState)
+    (activityCompenent as ActivityComponentImpl).inject(this)
+    profileId = intent.getIntExtra(NAVIGATION_PROFILE_ID_ARGUMENT_KEY, -1)
+    appLanguageActivityPresenter.handleOnCreate(
+        savedInstanceState?.retriveLanguageFromSavedState() ?: intent.retrieveLanguageFromParams(),
         profileId!!
     )
 }
