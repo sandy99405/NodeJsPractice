@@ -10674,3 +10674,27 @@ new commands
 
 38) git rm submodule_done/
 
+39) git diff --staged 
+
+40) git rev-list --count main 
+
+41) git config feature.manyFiles 1
+
+42) time git status 
+
+43) git show 
+
+44) git tag -L 
+
+45) git remote -v 
+
+46) git init empty_repo 
+
+47) git commit -m --allow-empty "No-ops commit"
+
+48) git amed commithash 
+
+49) git revert commithash 
+
+50) git reflog 
+
