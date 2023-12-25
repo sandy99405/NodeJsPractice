@@ -10758,3 +10758,23 @@ new commands
 
 20) git revert head 
 
+21) git grep -i -n "Key word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root 
+
+28) git push --force origin main 
+
+29) git push --set-upstream origin main 
+
+30) git push -4 
+
