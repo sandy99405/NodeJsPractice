@@ -10778,3 +10778,19 @@ new commands
 
 30) git push -4 
 
+31) git pull -4 
+
+32) git revert commithash 
+
+33) git reflog 
+
+34) git submodule add url 
+
+35) git clone empty empty_clone2 --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
