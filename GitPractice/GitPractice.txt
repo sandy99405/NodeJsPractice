@@ -11016,3 +11016,21 @@ new commands
 
 30) git push --force origin main 
 
+31) git push --set-upstream origin main 
+
+32) git push -4 
+
+33) git pull -4 
+
+34) git rev-list --count main 
+
+35) git submodule add url 
+
+36) git clone empty empty_clone2 --init 
+
+37) git submodule update --init 
+
+38) git submodule update --init --recursive 
+
+39) git rm submodule_name/
+
