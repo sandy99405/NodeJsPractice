@@ -11429,3 +11429,7 @@ new commands
 57) git rm -r --cached submoduel_name/
 
 58) git commit --amend
+
+59) git reset --hard HEAD^
+
+60) git rebase HEAD~2 --signoff
