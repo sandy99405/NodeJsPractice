@@ -11724,3 +11724,23 @@ new commands
 
 20) git log --decorate --oneline --graph 
 
+21) git grep -i -n "kew_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue
+
+26) git rebase --abort 
+
+27) git rbase -i root 
+
+28) git chekout - 
+
+29) git checkout -b "New_branch"
+
+30) git push --force origin main
+
