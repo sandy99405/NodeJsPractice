@@ -12032,3 +12032,19 @@ new commands
 
 50) git amend commithash 
 
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
+54) git show first-parent 
+
+55) git config --global core.symlinks true 
+
+56) git -c core.symlinks=true --recurse-submodules url 
+
+57) git amend commithash 
+
+58) git rm -r --cached submodule_name/
+
