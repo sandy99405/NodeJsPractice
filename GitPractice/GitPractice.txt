@@ -12094,7 +12094,7 @@ new commands
 
 19) git remote update --prune 
 
-20) git reset --hrad origin main
+20) git reset --hard origin main
 
 21) git grep -i -n "new_word"
 
@@ -12144,7 +12144,7 @@ new commands
 
 44) git config feature.manyFiles 1
 
-45) git feature.mnyFiles 1
+45) git amend commithash
 
 46) time git status 
 
@@ -12155,4 +12155,20 @@ new commands
 49) git init empty_repo
 
 50) git show 
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) git worktree list 
+
+54) git show first-parent 
+
+55) git config --global core.symlinks true
+
+56) git -c core.symlinks=true clone --recurse-submodules url
+
+57) git commit --amend
+
+58) git rm -r --cached submodule_name/folder
 
