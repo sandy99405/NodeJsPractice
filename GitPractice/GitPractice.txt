@@ -12951,9 +12951,9 @@ new commands
 
 16) git bisect bad
 
-17) git remote -V
+17) git remote update --prune
 
-18) git init empty_repo 
+18) git reset --hard origin main 
 
 19) git log -S "text changed"
 
@@ -12995,3 +12995,26 @@ new commands
 
 38) git rm submodule_name/
 
+39) git diff --staged 
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
+
+42) git config feature.manyFiles 1
+
+43) time git status 
+
+44) git tag -L 
+
+45) git remove -v 
+
+46) git show 
+
+47) git init empty_repo 
+
+48) git commit -m --allow-empty "No-ops commit"
+
+49) git rev-list --count main 
+
+50) git amend commithash 
