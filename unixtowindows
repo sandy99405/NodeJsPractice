@@ -112,3 +112,10 @@ Select one of these packages:
 
 
 https://askubuntu.com/questions/91543/apt-get-update-fails-to-fetch-files-temporary-failure-resolving-error
+
+
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search .
+
