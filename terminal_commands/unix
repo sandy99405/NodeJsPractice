@@ -1,1 +1,3 @@
-wsl --set-version Ubuntu 1
+wsl --install
+
+wsl --set-version Ubuntu-22.04 1(when sudo apt-get update or any other of that matter is not working, try this )
