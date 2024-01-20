@@ -13266,3 +13266,19 @@ new commands
 
 50) time git status 
 
+51) git tag -L 
+
+52) git amend commithash 
+
+53) git commit -m --allow-empty "No-ops commit"
+
+54) git rev-lsit --count main 
+
+55) git show first-parent 
+
+56) git config --global core.symlinks true 
+
+57) git -c core.symlinks=true clone --recurse-submodules url 
+
+58) git commit --amend 
+
