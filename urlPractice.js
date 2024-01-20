@@ -20,3 +20,23 @@ http.createServer(function(req,res){
 }).listen(3000)
 
 
+var url = require('url')
+
+http.createServer(function(req,res){
+        res.writeHead(200,{'Content-type':'text/html'})
+        var q = url.parse(req.url,true).query
+        var text = q.month + " " + q.year
+        res.write(text)
+        res.end()
+}).listen(3000)
+
+
+var fs = require('fs')
+
+fs.writeFile("DemoFile.html",function(err,data){
+        http.createServer(function(req,res){
+                res.writeHead(200,{'Content-type':'text/html'})
+                res.write(data)
+                return res.end()
+        }).listen(3000)
+})
