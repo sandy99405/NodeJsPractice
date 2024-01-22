@@ -677,3 +677,813 @@ NCOST
 SOBSK
 MMSTD
 
+
+
+
+
+
+
+
+
+
+how to find this path in wsl command line /c/mnt/
+ChatGPT
+In the Windows Subsystem for Linux (WSL), the Windows filesystems are mounted under the /mnt/ directory. Specifically, your C: drive can be found under /mnt/c/.
+
+For example, the path C:\Users\ASUS\Documents in Windows would be represented as /mnt/c/Users/ASUS/Documents in WSL. You can navigate to this directory in WSL using the cd command:
+
+bash
+Copy code
+cd /mnt/c/Users/ASUS/Documents
+Replace Documents with the specific folder or path you want to navigate to.
+
+If you have any specific paths or tasks you'd like assistance with, feel free to provide more details!
+
+User
+where to download the android sdk commandline tools for linux?
+ChatGPT
+As of my knowledge cutoff date in January 2022, the Android command-line tools can be downloaded from the official Android developer website. Here are the general steps to download the Android SDK Command-line tools for Linux:
+
+Visit the official Android developer website: Android Studio.
+
+Scroll down to the "Command line tools only" section.
+
+Look for the "Command Line Tools only" package. This package provides the basic command-line tools for developing Android applications.
+
+Download the appropriate version for Linux.
+
+Please note that the specific steps and URLs might change over time, and it's recommended to check the official Android developer website for the most up-to-date information. If there have been changes or updates after my knowledge cutoff date, you might want to visit the official Android developer website or the Android Studio release notes for the latest information.
+
+If you encounter any issues or have specific questions about Android development, consider checking the official documentation or community forums for assistance.
+
+User
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$ cd cmdline-tools/
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ mkdir tools
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ mv -i * tools
+mv: cannot move 'tools' to a subdirectory of itself, 'tools/tools
+ChatGPT
+It seems like you encountered an issue when trying to move the contents of the current directory into a subdirectory named "tools." The error message indicates that it's trying to move "tools" into itself, which is causing the problem.
+
+To resolve this, you can create the "tools" directory within the "cmdline-tools" directory and then move the contents into it. Here are the steps:
+
+bash
+Copy code
+# Navigate to the cmdline-tools directory
+cd ~/Android/Sdk/cmdline-tools/
+
+# Create the 'tools' directory within cmdline-tools
+mkdir tools
+
+# Move the contents of the current directory into the 'tools' directory
+mv -i * tools/
+This way, you are explicitly creating the "tools" directory inside "cmdline-tools" and then moving the contents into that subdirectory. The -i option with mv prompts you for confirmation before overwriting any existing files, providing an additional layer of safety.
+
+After running these commands, the contents of the "cmdline-tools" directory should be moved into the "tools" subdirectory.
+
+User
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$ cd cmdline-tools/
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ mkdir tools
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ mv -i * tools
+mv: cannot move 'tools' to a subdirectory of itself, 'tools/tools'
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ ls
+tools
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ mv -i * tools/
+mv: cannot move 'tools' to a subdirectory of itself, 'tools/tools'
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$
+ChatGPT
+It appears that there might be a misunderstanding. The issue is arising because you're trying to move the "tools" directory into itself, which is causing a conflict.
+
+Let's clarify the steps:
+
+bash
+Copy code
+# Navigate to the cmdline-tools directory
+cd ~/Android/Sdk/cmdline-tools/
+
+# Create the 'tools' directory within cmdline-tools
+mkdir tools
+
+# Move the contents of the current directory into the 'tools' directory
+mv -i * tools/
+The mv -i * tools/ command is meant to move all files and directories (except "tools") into the "tools" directory. If the "tools" directory already exists, this command shouldn't move it into itself.
+
+If you're still encountering issues, you can try these alternative commands:
+
+bash
+Copy code
+# Navigate to the cmdline-tools directory
+cd ~/Android/Sdk/cmdline-tools/
+
+# Create the 'tools' directory within cmdline-tools
+mkdir tools
+
+# Move the contents of the current directory into the 'tools' directory
+shopt -s dotglob # This enables moving hidden files (those starting with a dot)
+mv -i * tools/
+shopt -u dotglob # Disable dotglob to avoid unintended behavior
+These commands should correctly move the contents into the "tools" directory.
+
+User
+I'm already in the directory can't you see from the input I gave you ?
+ChatGPT
+I apologize for the oversight. It seems I misunderstood your input. It looks like you are already in the cmdline-tools directory, and you've created the tools directory inside it.
+
+If you want to move the contents of the current directory (excluding the tools directory) into the tools directory, you can use the following:
+
+bash
+Copy code
+# Move the contents of the current directory into the 'tools' directory
+mv -i !(tools) tools/
+This command uses the !(tools) expression to exclude the tools directory from the move operation. It should move all other files and directories into the tools directory.
+
+I appreciate your patience and understanding.
+
+User
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$ sdkmanager
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.UnsupportedClassVersionError: com/android/sdklib/tool/sdkmanager/SdkManagerCli has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:621)
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$ sdkmanager --install "platform-tools"
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.UnsupportedClassVersionError: com/android/sdklib/tool/sdkmanager/SdkManagerCli has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:621)
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$
+ChatGPT
+The error you're encountering indicates a version mismatch between the Java Runtime used by sdkmanager and the version of the compiled classes. It seems like sdkmanager is compiled with a higher Java version than the one installed on your system.
+
+To resolve this issue, you should update your Java version to a version that supports the class file version used by sdkmanager. You can follow these steps:
+
+Check Java Version:
+To check your current Java version, run the following command:
+
+bash
+Copy code
+java -version
+Download and Install a Newer Java Version:
+Visit the official Java download page or use a package manager (e.g., apt for Ubuntu, brew for macOS) to install a newer version of Java.
+
+For example, to install OpenJDK 11 using apt on Ubuntu:
+
+bash
+Copy code
+sudo apt update
+sudo apt install openjdk-11-jdk
+Set JAVA_HOME:
+After installing a new Java version, you may need to set the JAVA_HOME environment variable to point to the installation directory. You can do this by adding the following line to your shell configuration file (e.g., ~/.bashrc or ~/.zshrc):
+
+bash
+Copy code
+export JAVA_HOME=/path/to/your/java/installation
+export PATH=$PATH:$JAVA_HOME/bin
+Replace /path/to/your/java/installation with the actual path where Java is installed.
+
+Reload Shell Configuration:
+After making changes to your shell configuration file, reload it to apply the changes:
+
+bash
+Copy code
+source ~/.bashrc   # or source ~/.zshrc
+Verify Java Version:
+Run java -version again to verify that the correct Java version is now being used.
+
+After these steps, try running sdkmanager again:
+
+bash
+Copy code
+sdkmanager --install "platform-tools"
+This should resolve the UnsupportedClassVersionError you were encountering.
+
+User
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$ java -version
+openjdk version "1.8.0_392"
+OpenJDK Runtime Environment (build 1.8.0_392-8u392-ga-1~22.04-b08)
+OpenJDK 64-Bit Server VM (build 25.392-b08, mixed mode)
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$ sdkmanager
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.UnsupportedClassVersionError: com/android/sdklib/tool/sdkmanager/SdkManagerCli has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:621)
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk$
+
+I'm running this command in wsl
+ChatGPT
+It looks like your default java version in WSL is still set to Java 8 (version 1.8.0_392), which is not compatible with the sdkmanager version you're trying to run. The sdkmanager requires a Java version that supports class file versions up to 61.0, and Java 8 only supports up to version 52.0.
+
+Here's how you can resolve this:
+
+Install a Newer Version of Java:
+In WSL, you can install a newer version of Java, such as OpenJDK 11 or 16. You can use a package manager like apt to install it. For example:
+
+bash
+Copy code
+sudo apt update
+sudo apt install openjdk-11-jdk
+You can also check for other available versions with:
+
+bash
+Copy code
+sudo apt search openjdk
+Set the Appropriate JAVA_HOME:
+After installing a new Java version, set the JAVA_HOME environment variable to point to the installation directory. You can add the following line to your shell configuration file (~/.bashrc or ~/.zshrc):
+
+bash
+Copy code
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+Replace /usr/lib/jvm/java-11-openjdk-amd64 with the actual path where Java 11 is installed.
+
+Reload Shell Configuration:
+After making changes to your shell configuration file, reload it to apply the changes:
+
+bash
+Copy code
+source ~/.bashrc   # or source ~/.zshrc
+Verify Java Version:
+Run java -version to verify that the correct Java version is now being used.
+
+Now, try running the sdkmanager command again:
+
+bash
+Copy code
+sdkmanager --install "platform-tools"
+This should work without the UnsupportedClassVersionError error.
+
+User
+sandy99@DESKTOP-ETRFE43:~/Android/Sdk/cmdline-tools$ sudo apt install bazel-4.0.0
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package bazel-4.0.0
+E: Couldn't find any package by glob 'bazel-4.0.0'
+ChatGPT
+It seems that the package bazel-4.0.0 is not available in the default package repositories for your system. Instead, you can install Bazel using the instructions provided by the Bazel project.
+
+Here are the general steps to install Bazel:
+
+Download Bazel Installer:
+Visit the Bazel releases page and download the Bazel installer for your operating system. Since you are using Ubuntu, you might want to download the binary installer for Linux.
+
+For example, you can use the following commands to download and install Bazel 4.0.0:
+
+bash
+Copy code
+wget https://github.com/bazelbuild/bazel/releases/download/4.0.0/bazel-4.0.0-installer-linux-x86_64.sh
+chmod +x bazel-4.0.0-installer-linux-x86_64.sh
+./bazel-4.0.0-installer-linux-x86_64.sh --user
+Adjust the URL based on the version you want to install.
+
+Configure Environment:
+Add the Bazel binary directory to your PATH. The installer will usually provide instructions on what line to add to your shell configuration file (~/.bashrc or ~/.zshrc). For example:
+
+bash
+Copy code
+export PATH="$HOME/bin:$PATH"
+After making changes, reload your shell configuration:
+
+bash
+Copy code
+source ~/.bashrc   # or source ~/.zshrc
+Verify Installation:
+Verify that Bazel is installed by running:
+
+bash
+Copy code
+bazel version
+You should see the installed Bazel version.
+
+Remember to check the official Bazel documentation for the most up-to-date instructions and any additional dependencies that may be required.
+
+User
+export PATH="$HOME/bin:$PATH"
+can i just copy paste this ?
+ChatGPT
+Yes, you can copy and paste the export PATH="$HOME/bin:$PATH" command into your terminal. This command adds the bin directory in your home folder to the beginning of the PATH environment variable.
+
+Here's a breakdown of what this command does:
+
+export: This is a shell command used to export variables to the environment.
+PATH="$HOME/bin:$PATH": This sets the PATH variable to include the bin directory in your home folder ($HOME/bin), followed by the existing PATH value ($PATH).
+After running this command, the shell will recognize executables in the bin directory of your home folder. It's a common practice to add user-specific binaries to the bin directory in the home folder for easier management.
+
+User
+sandy99@DESKTOP-ETRFE43:~/opensource/oppia-android$ bazel build //:oppia
+DEBUG: Rule 'robolectric' indicated that a canonical reproducible form can be obtained by modifying arguments sha256 = "af0177d32ecd2cd68ee6e9f5d38288e1c4de0dd2a756bb7133c243f2d5fe06f7"
+DEBUG: Repository robolectric instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:97:13: in <toplevel>
+Repository rule http_archive defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/http.bzl:336:31: in <toplevel>
+DEBUG: Rule 'tools_android' indicated that a canonical reproducible form can be obtained by modifying arguments shallow_since = "1594238320 -0400"
+DEBUG: Repository tools_android instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:108:15: in <toplevel>
+Repository rule git_repository defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/git.bzl:199:33: in <toplevel>
+ERROR: Error fetching repository: /home/sandy99/opensource/oppia-android/WORKSPACE:12:23: Android SDK api level 33 was requested but it is not installed in the Android SDK at /home/sandy99/Android/Sdk. The api levels found were [28]. Please choose an available api level or install api level 33 from the Android SDK Manager.
+ERROR: Analysis of target '//:oppia' failed; build aborted: Android SDK api level 33 was requested but it is not installed in the Android SDK at /home/sandy99/Android/Sdk. The api levels found were [28]. Please choose an available api level or install api level 33 from the Android SDK Manager.
+INFO: Elapsed time: 0.159s
+INFO: 0 processes.
+FAILED: Build did NOT complete successfully (0 packages loaded, 0 targets configured)
+    Fetching @local_config_cc_toolchains; fetching
+ChatGPT
+The error you're encountering indicates that the Android SDK API level 33 is required for the build, but it is not installed in your Android SDK located at /home/sandy99/Android/Sdk. The API levels found in your SDK are up to 28.
+
+To resolve this issue, you need to install the required API level using the Android SDK Manager. Follow these steps:
+
+Open a terminal in WSL.
+
+Run the following command to open the Android SDK Manager:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager
+If the above command doesn't work, you can try the following:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager --sdk_root=/home/sandy99/Android/Sdk
+Look for "API Level 33" in the list of available packages and install it.
+
+Once the installation is complete, retry your Bazel build command:
+
+bash
+Copy code
+bazel build //:oppia
+This should resolve the issue by providing the required Android SDK API level. Make sure to replace the paths in the commands with the correct paths on your system if they are different.
+
+User
+sandy99@DESKTOP-ETRFE43:~/opensource/oppia-android$ /home/sandy99/Android/Sdk/tools/bin/sdkmanager --sdk_root=/home/sandy99/Android/Sdk
+Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
+        at com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)
+        at com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)
+        at com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)
+        at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:73)
+        at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:48)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
+        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+        ... 5 more
+sandy99@DESKTOP-ETRFE43:~/opensource/oppia-android$
+ChatGPT
+It looks like you're encountering a common issue related to changes in Java starting from version 9, where certain Java EE modules were removed, and the javax.xml.bind.annotation package is no longer part of the standard Java SE.
+
+To resolve this issue, you can try the following steps:
+
+Install OpenJDK 8:
+Install OpenJDK 8 which includes the necessary Java EE modules. You can use the following commands:
+
+bash
+Copy code
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+Ensure that OpenJDK 8 is set as the default Java version. You can use the update-alternatives command for this:
+
+bash
+Copy code
+sudo update-alternatives --config java
+Select OpenJDK 8 from the list.
+
+Retry SDK Manager:
+After installing OpenJDK 8, try running the SDK Manager again:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager --sdk_root=/home/sandy99/Android/Sdk
+This should resolve the NoClassDefFoundError related to javax.xml.bind.annotation.XmlSchema.
+
+Bazel Build:
+Once the SDK Manager runs successfully, you can retry your Bazel build command:
+
+bash
+Copy code
+bazel build //:oppia
+Please let me know if you encounter any issues or if you have further questions!
+
+User
+again
+
+sandy99@DESKTOP-ETRFE43:~/opensource/oppia-android$ bazel build //:oppia
+DEBUG: Rule 'robolectric' indicated that a canonical reproducible form can be obtained by modifying arguments sha256 = "af0177d32ecd2cd68ee6e9f5d38288e1c4de0dd2a756bb7133c243f2d5fe06f7"
+DEBUG: Repository robolectric instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:97:13: in <toplevel>
+Repository rule http_archive defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/http.bzl:336:31: in <toplevel>
+DEBUG: Rule 'tools_android' indicated that a canonical reproducible form can be obtained by modifying arguments shallow_since = "1594238320 -0400"
+DEBUG: Repository tools_android instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:108:15: in <toplevel>
+Repository rule git_repository defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/git.bzl:199:33: in <toplevel>
+ERROR: Error fetching repository: /home/sandy99/opensource/oppia-android/WORKSPACE:12:23: Android SDK api level 33 was requested but it is not installed in the Android SDK at /home/sandy99/Android/Sdk. The api levels found were [28]. Please choose an available api level or install api level 33 from the Android SDK Manager.
+ERROR: Analysis of target '//:oppia' failed; build aborted: Android SDK api level 33 was requested but it is not installed in the Android SDK at /home/sandy99/Android/Sdk. The api levels found were [28]. Please choose an available api level or install api level 33 from the Android SDK Manager.
+INFO: Elapsed time: 0.133s
+INFO: 0 processes.
+FAILED: Build did NOT complete successfully (0 packages loaded, 0 targets configured)
+    Fetching @local_config_cc_toolchains; fetching
+ChatGPT
+It looks like the error is related to the Android SDK API level 33 not being installed in your Android SDK. To resolve this, you need to install the required API level using the Android SDK Manager. Follow these steps:
+
+Open the Android SDK Manager:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager
+You may need to specify the --sdk_root option:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager --sdk_root=/home/sandy99/Android/Sdk
+Install Android API level 33:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager --sdk_root=/home/sandy99/Android/Sdk "platforms;android-33"
+If the above command doesn't work, try using the package name directly:
+
+bash
+Copy code
+/home/sandy99/Android/Sdk/tools/bin/sdkmanager --sdk_root=/home/sandy99/Android/Sdk "platforms;android-33"
+After installing the required API level, try running the Bazel build command again:
+
+bash
+Copy code
+bazel build //:oppia
+This should resolve the issue related to the missing Android API level. If you encounter any further issues or have additional questions, feel free to ask!
+
+User
+sandy99@DESKTOP-ETRFE43:~/opensource/oppia-android$ bazel build //:oppia
+DEBUG: Rule 'robolectric' indicated that a canonical reproducible form can be obtained by modifying arguments sha256 = "af0177d32ecd2cd68ee6e9f5d38288e1c4de0dd2a756bb7133c243f2d5fe06f7"
+DEBUG: Repository robolectric instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:97:13: in <toplevel>
+Repository rule http_archive defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/http.bzl:336:31: in <toplevel>
+DEBUG: Rule 'tools_android' indicated that a canonical reproducible form can be obtained by modifying arguments shallow_since = "1594238320 -0400"
+DEBUG: Repository tools_android instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:108:15: in <toplevel>
+Repository rule git_repository defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/git.bzl:199:33: in <toplevel>
+DEBUG: Rule 'protobuf_tools' indicated that a canonical reproducible form can be obtained by modifying arguments sha256 = "efcb0b9004200fce79de23be796072a055105273905a5a441dbb5a979d724d20"
+DEBUG: Repository protobuf_tools instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:154:13: in <toplevel>
+Repository rule http_archive defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/http.bzl:336:31: in <toplevel>
+WARNING: Download from https://maven.google.com/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/auto/value/auto-value-annotations/1.8.1/auto-value-annotations-1.8.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/auto/value/auto-value-annotations/1.8.1/auto-value-annotations-1.8.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.0/kotlin-stdlib-common-1.5.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.0/kotlin-stdlib-common-1.5.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/disklrucache/4.11.0/disklrucache-4.11.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/disklrucache/4.11.0/disklrucache-4.11.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/annotations/4.11.0/annotations-4.11.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/annotations/4.11.0/annotations-4.11.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/1.5.0/kotlin-stdlib-1.5.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/1.5.0/kotlin-stdlib-1.5.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/okio/okio/2.6.0/okio-2.6.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/okio/okio/2.6.0/okio-2.6.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/okhttp3/okhttp/4.7.2/okhttp-4.7.2.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/okhttp3/okhttp/4.7.2/okhttp-4.7.2-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.4.1/kotlinx-coroutines-core-1.4.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.4.1/kotlinx-coroutines-core-1.4.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.4.1/kotlinx-coroutines-android-1.4.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlinx/kotlinx-coroutines-android/1.4.1/kotlinx-coroutines-android-1.4.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/protobuf/protobuf-javalite/3.17.3/protobuf-javalite-3.17.3.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/protobuf/protobuf-javalite/3.17.3/protobuf-javalite-3.17.3-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlinx/kotlinx-metadata-jvm/0.1.0/kotlinx-metadata-jvm-0.1.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlinx/kotlinx-metadata-jvm/0.1.0/kotlinx-metadata-jvm-0.1.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/javax/inject/javax.inject/1/javax.inject-1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/javax/inject/javax.inject/1/javax.inject-1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger/2.28.1/dagger-2.28.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger/2.28.1/dagger-2.28.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/errorprone/javac-shaded/9-dev-r4023-3/javac-shaded-9-dev-r4023-3.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/errorprone/javac-shaded/9-dev-r4023-3/javac-shaded-9-dev-r4023-3-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/javapoet/1.11.1/javapoet-1.11.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/javapoet/1.11.1/javapoet-1.11.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/net/ltgt/gradle/incap/incap/0.3/incap-0.3.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/net/ltgt/gradle/incap/incap/0.3/incap-0.3-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/javax/annotation/jsr250-api/1.0/jsr250-api-1.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/guava/guava/30.1.1-android/guava-30.1.1-android.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/guava/guava/30.1.1-android/guava-30.1.1-android-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger-producers/2.28.1/dagger-producers-2.28.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger-producers/2.28.1/dagger-producers-2.28.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger-spi/2.28.1/dagger-spi-2.28.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger-spi/2.28.1/dagger-spi-2.28.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/googlejavaformat/google-java-format/1.5/google-java-format-1.5.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/googlejavaformat/google-java-format/1.5/google-java-format-1.5-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger-compiler/2.28.1/dagger-compiler-2.28.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/dagger/dagger-compiler/2.28.1/dagger-compiler-2.28.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/moshi/moshi/1.11.0/moshi-1.11.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/moshi/moshi/1.11.0/moshi-1.11.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/auto/service/auto-service-annotations/1.0-rc7/auto-service-annotations-1.0-rc7.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/google/auto/service/auto-service-annotations/1.0-rc7/auto-service-annotations-1.0-rc7-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-reflect/1.5.0/kotlin-reflect-1.5.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-reflect/1.5.0/kotlin-reflect-1.5.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/ow2/asm/asm/9.1/asm-9.1.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/ow2/asm/asm/9.1/asm-9.1-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/kotlinpoet/1.6.0/kotlinpoet-1.6.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/kotlinpoet/1.6.0/kotlinpoet-1.6.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/moshi/moshi-kotlin-codegen/1.11.0/moshi-kotlin-codegen-1.11.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/moshi/moshi-kotlin-codegen/1.11.0/moshi-kotlin-codegen-1.11.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/retrofit2/retrofit/2.9.0/retrofit-2.9.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/retrofit2/retrofit/2.9.0/retrofit-2.9.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/retrofit2/converter-moshi/2.5.0/converter-moshi-2.5.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/retrofit2/converter-moshi/2.5.0/converter-moshi-2.5.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/moshi/moshi-kotlin/1.11.0/moshi-kotlin-1.11.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/squareup/moshi/moshi-kotlin/1.11.0/moshi-kotlin-1.11.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/compiler/4.11.0/compiler-4.11.0.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/compiler/4.11.0/compiler-4.11.0-sources.jar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/nl/dionsegijn/konfetti/1.2.5/konfetti-1.2.5.aar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/gifdecoder/4.11.0/gifdecoder-4.11.0.aar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+WARNING: Download from https://maven.google.com/com/github/bumptech/glide/glide/4.11.0/glide-4.11.0.aar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+DEBUG: Rule 'circularimageview' indicated that a canonical reproducible form can be obtained by modifying arguments shallow_since = "1622148929 -0700"
+DEBUG: Repository circularimageview instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:118:15: in <toplevel>
+Repository rule git_repository defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/git.bzl:199:33: in <toplevel>
+WARNING: Download from https://maven.google.com/de/hdodenhof/circleimageview/3.0.1/circleimageview-3.0.1.aar failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException GET returned 404 Not Found
+DEBUG: Rule 'kotlitex' indicated that a canonical reproducible form can be obtained by modifying arguments shallow_since = "1675741075 -0800"
+DEBUG: Repository kotlitex instantiated at:
+  /home/sandy99/opensource/oppia-android/WORKSPACE:142:15: in <toplevel>
+Repository rule git_repository defined at:
+  /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/bazel_tools/tools/build_defs/repo/git.bzl:199:33: in <toplevel>
+INFO: Analyzed target //:oppia (1 packages loaded, 1485 targets configured).
+INFO: Found 1 target...
+INFO: From Compiling src/google/protobuf/message_lite.cc:
+In file included from /usr/include/string.h:535,
+                 from external/com_google_protobuf/src/google/protobuf/stubs/port.h:39,
+                 from external/com_google_protobuf/src/google/protobuf/stubs/common.h:46,
+                 from external/com_google_protobuf/src/google/protobuf/message_lite.h:45,
+                 from external/com_google_protobuf/src/google/protobuf/message_lite.cc:36:
+In function 'void* memcpy(void*, const void*, size_t)',
+    inlined from 'google::protobuf::uint8* google::protobuf::io::EpsCopyOutputStream::WriteRaw(const void*, int, google::protobuf::uint8*)' at external/com_google_protobuf/src/google/protobuf/io/coded_stream.h:699:16,
+    inlined from 'virtual google::protobuf::uint8* google::protobuf::internal::ImplicitWeakMessage::_InternalSerialize(google::protobuf::uint8*, google::protobuf::io::EpsCopyOutputStream*) const' at external/com_google_protobuf/src/google/protobuf/implicit_weak_message.h:87:28,
+    inlined from 'bool google::protobuf::MessageLite::SerializePartialToZeroCopyStream(google::protobuf::io::ZeroCopyOutputStream*) const' at external/com_google_protobuf/src/google/protobuf/message_lite.cc:388:30:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: warning: 'void* __builtin___memcpy_chk(void*, const void*, long unsigned int, long unsigned int)' specified size between 18446744071562067968 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+   30 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+ERROR: /home/sandy99/.cache/bazel/_bazel_sandy99/f4abc64c76b571c55abfea6aacdbce7d/external/maven/BUILD:1388:11: AarResourcesExtractor external/maven/_aar/unzipped/resources/androidx_cardview_cardview failed: (Exit 127): aar_resources_extractor failed: error executing command bazel-out/host/bin/external/bazel_tools/tools/android/aar_resources_extractor --input_aar ... (remaining 9 argument(s) skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox aar_resources_extractor failed: error executing command bazel-out/host/bin/external/bazel_tools/tools/android/aar_resources_extractor --input_aar ... (remaining 9 argument(s) skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox
+/usr/bin/env: 'python': No such file or directory
+Target //:oppia failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 205.655s, Critical Path: 48.75s
+INFO: 200 processes: 17 internal, 183 processwrapper-sandbox.
+FAILED: Build did NOT complete successfully
+ChatGPT
+It looks like there are multiple issues with the build process. One specific error is related to the absence of the 'python' executable:
+
+bash
+Copy code
+/usr/bin/env: 'python': No such file or directory
+This error suggests that the build process is trying to execute a command that depends on Python, but Python is not found in the specified location.
+
+To resolve this, make sure you have Python installed on your system, and the executable is available in the PATH. You can install Python using your system's package manager or by downloading it from the official Python website.
+
+Additionally, there are several warnings related to failed downloads from Maven Central, indicating that some dependencies are not found. You may want to check your internet connection and ensure that the specified dependencies are available in the Maven Central repository.
+
+If you continue to face issues, consider checking the project's documentation or reaching out to the project's community for further assistance.
+
+User
+how to fix it?
+ChatGPT
+The error message indicates that the build failed due to an issue with the aar_resources_extractor and a missing 'python' executable. It seems that the build process is unable to find the 'python' command.
+
+Here are a few steps you can take to troubleshoot and fix this issue:
+
+Check Python Installation:
+Ensure that Python is installed on your system. You can do this by running the following command in your terminal:
+
+bash
+Copy code
+python --version
+If Python is not installed, you will need to install it. You can download Python from the official website: Python Downloads
+
+Check Python in PATH:
+Make sure that the 'python' executable is in your system's PATH. You can check this by running:
+
+bash
+Copy code
+which python
+If the command doesn't return a path, it means that 'python' is not in your PATH. You may need to add the directory containing the 'python' executable to your PATH environment variable.
+
+Check Bazel Version:
+Ensure that you are using a compatible version of Bazel. Some versions of Bazel may have specific requirements for Python. You can check the Bazel version by running:
+
+bash
+Copy code
+bazel version
+Update Bazel Configuration:
+Update your Bazel build configuration to use the correct Python executable. You can add the following lines to your .bazelrc file:
+
+css
+Copy code
+build --python_path=/path/to/your/python
+Replace /path/to/your/python with the actual path to your Python executable.
+
+Check External Dependencies:
+Ensure that any external dependencies required by your project are correctly configured. It appears that there were some 404 errors during the download process. You may need to update the URLs or versions of these dependencies in your project configuration.
+
+Check Bazel Sandbox:
+The error message suggests using --sandbox_debug to see verbose messages from the sandbox. You can try running the build with this option to get more detailed information about the issue:
+
+bash
+Copy code
+bazel build --sandbox_debug //:oppia
+Review the output for any additional error messages or information that might help diagnose the problem.
+
+By addressing these steps, you should be able to troubleshoot and resolve the issue with the missing 'python' executable during the Bazel build process.
+
+User
+how to do this ?
+
+Update espresso-core to 3.5.0-alpha03
+ChatGPT
+To update espresso-core to version 3.5.0-alpha03 in your Android project, you need to make changes in your project's build.gradle file. Here's how you can do it:
+
+Open the build.gradle file for your app module. This file is usually located in the app directory of your Android Studio project.
+
+Look for the dependencies block in the build.gradle file. It might look something like this:
+
+gradle
+Copy code
+dependencies {
+    // other dependencies...
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:x.x.x'
+}
+The version number (x.x.x) in your project may be different.
+
+Update the espresso-core dependency to version 3.5.0-alpha03. Modify the line to look like this:
+
+gradle
+Copy code
+dependencies {
+    // other dependencies...
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha03'
+}
+Ensure that you replace the existing version with 3.5.0-alpha03.
+
+After making the changes, sync your project with Gradle by clicking on the "Sync Now" link that appears at the top right of Android Studio.
+
+
+This action will download the updated espresso-core library to your project.
+
+Once the sync is complete, you can rebuild your project to ensure that the changes take effect.
+
+You can either click on "Build" in the top menu and select "Rebuild Project" or use the Gradle toolbar on the right side of Android Studio to trigger a rebuild.
+
+That's it! Your project should now be using espresso-core version 3.5.0-alpha03. Make sure to test your app thoroughly to ensure compatibility with the new version of the library.
+
+User
+is this a scrapable_link,  extracted_copy_link or a  direct_link_only
+https://asm.ow2.io/license.html
+ChatGPT
+The link you provided (https://asm.ow2.io/license.html) appears to be a direct link to a web page. It's not explicitly labeled as a "scrapable_link," "extracted_copy_link," or "direct_link_only" based on the information provided. These terms are not standard internet conventions and might be specific to a particular context or system.
+
+If you provide more context or clarify what you mean by these terms, I can try to assist you further. Otherwise, the link you shared is a standard URL to a web page, and it can be accessed directly through a web browser.
+
+User
+for ex: 
+
+license {
+  license_name: "The Apache Software License, Version 2.0"
+  original_link: "https://www.apache.org/licenses/LICENSE-2.0.txt"
+  scrapable_link {
+    url: "https://www.apache.org/licenses/LICENSE-2.0.txt"
+  }
+}
+ChatGPT
+In the example you provided, it includes a license block with a scrapable_link field. This indicates that the URL specified is suitable for scraping or extracting information. In this case, the license information is associated with "The Apache Software License, Version 2.0," and the original link is provided.
+
+For the link you shared (https://asm.ow2.io/license.html), you can check if it fits into a similar structure. If the webpage contains information about a license, you may consider it a "scrapable link" and extract relevant information from it.
+
+Here's how you might adapt the structure for the link you provided:
+
+yaml
+Copy code
+license {
+  license_name: "Your License Name"  # Replace with the actual license name
+  original_link: "https://asm.ow2.io/license.html"
+  scrapable_link {
+    url: "https://asm.ow2.io/license.html"
+  }
+}
+Replace "Your License Name" with the actual name of the license associated with the content of the provided link.
+
+
+1 / 2
+
+User
+how do I know if this is scrappable or not ? https://asm.ow2.io/license.html
+ChatGPT
+To determine if a web page is scrapable, you need to inspect the structure of the HTML content and check if the information you need is available in a consistent and predictable way. Here are some steps you can take:
+
+Inspect the HTML Structure:
+
+Open the web page (https://asm.ow2.io/license.html) in your web browser.
+Right-click on the page and select "Inspect" or use the keyboard shortcut (Ctrl+Shift+I or Cmd+Option+I).
+Examine the HTML structure to see if license information is present and if it has identifiable tags or classes.
+Look for License Information:
+
+Check for text related to licensing or legal information on the page.
+Inspect the HTML elements (tags) that contain the license text.
+Consistency:
+
+Ensure that the license information is presented consistently across different pages if applicable.
+Verify that the structure of the HTML content is stable and not likely to change frequently.
+Terms of Service or Legal Section:
+
+Many websites place licensing information in sections like "Terms of Service," "Legal," or similar. Check these sections for relevant information.
+Robots.txt:
+
+Check the website's robots.txt file (e.g., https://asm.ow2.io/robots.txt) to see if web scraping is allowed or restricted.
+Terms of Use of the Website:
+
+Make sure to review the terms of use or terms of service of the website to ensure compliance with their policies.
+If you find consistent patterns in the HTML structure that contain the license information, it's likely that you can scrape the content. However, keep in mind that web scraping may be subject to legal and ethical considerations, and it's important to respect the website's terms of use.
+
+If you encounter difficulties or have specific questions about scraping the content from the given website, you may want to consult with the website's terms of use or seek permission from the website owner.
+
+
+
+
+
+
+
+
+
+                                                                    mail
+
+
+Hi Rama Devi,
+
+Please find the document in the attachment below. All the errors and solutions are available.
+(I'm also planning to provide the steps in oppia-android repository if they give permission).
+
+I appreciate your interest in this issue and I hope that these steps will be helpful to others in the community. If you have any further questions, please don't hesitate to ask.
+
+Also, I can't believe the fact that I'm having conversations with a "GSOC contributor".
+I've had a glimpse of your journey in your LinkedIn and YouTube profiles, it was spectacular how you achieved that in such a short amount of time.
+
+
+I'm very excited and thrilled to know about your successful GSOC(2023) journey a little deeper.
+
+I urge you to guide me or walk me through as I'm new to this open-source world.
+If you are planning to apply for GSOC 2024, I will be on my toes to help you resolve your 
