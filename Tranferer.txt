@@ -1460,3 +1460,30 @@ Make sure to review the terms of use or terms of service of the website to ensur
 If you find consistent patterns in the HTML structure that contain the license information, it's likely that you can scrape the content. However, keep in mind that web scraping may be subject to legal and ethical considerations, and it's important to respect the website's terms of use.
 
 If you encounter difficulties or have specific questions about scraping the content from the given website, you may want to consult with the website's terms of use or seek permission from the website owner.
+
+
+
+
+
+
+
+
+
+                                                                    mail
+
+
+Hi Rama Devi,
+
+Please find the document in the attachment below. All the errors and solutions are available.
+(I'm also planning to provide the steps in oppia-android repository if they give permission).
+
+I appreciate your interest in this issue and I hope that these steps will be helpful to others in the community. If you have any further questions, please don't hesitate to ask.
+
+Also, I can't believe the fact that I'm having conversations with a "GSOC contributor".
+I've had a glimpse of your journey in your LinkedIn and YouTube profiles, it was spectacular how you achieved that in such a short amount of time.
+
+
+I'm very excited and thrilled to know about your successful GSOC(2023) journey a little deeper.
+
+I urge you to guide me or walk me through as I'm new to this open-source world.
+If you are planning to apply for GSOC 2024, I will be on my toes to help you resolve your 
