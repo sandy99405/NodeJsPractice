@@ -13488,3 +13488,10 @@ new commands
 
 37) git rm submodule_name/
 
+38) git diff --staged 
+
+39) git rev-list --count main 
+
+40) git config --global help.autocorrect 1
+
+41) git config --global help.autocorrect 0
