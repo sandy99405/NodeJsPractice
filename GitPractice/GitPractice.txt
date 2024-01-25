@@ -13454,3 +13454,37 @@ new commands
 
 20) git config --global alias.ac "!git add -A && git commit -m"
 
+21) git grep -i -n "key_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git checkout - 
+
+28) git checkout -b "new_branch"
+
+29) git push --force origin main 
+
+30) git push --set-upstream origin main 
+
+31) git push -4 
+
+32) git pull -4 
+
+33) git submodule add url 
+
+34) git clone empty empty_clone2 --recursive 
+
+35) git submodule update --init 
+
+36) git submodule update --init --recursive 
+
+37) git rm submodule_name/
+
