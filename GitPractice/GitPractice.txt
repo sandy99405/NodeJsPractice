@@ -13530,3 +13530,6 @@ new commands
 
 58) git commit --amend 
 
+59) git rebase HEAD~2 --signoff 
+
+60) git push --force-with-lease origin main 
