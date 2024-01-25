@@ -13513,3 +13513,20 @@ new commands
 49) git show 
 
 50) git rebase -i root
+
+51) git worktree add 
+
+52) git worktree remove 
+
+53) gt worktree list 
+
+54) git show first-parent
+
+55) git config --global core.symlinks true 
+
+56) git -c core.symlinks=true clone --recrusive-submodules url
+
+57) git rm -r --cached submodule_name/
+
+58) git commit --amend 
+
