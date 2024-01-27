@@ -13736,3 +13736,28 @@ new commands
 37) git submodule update --init --recursive 
 
 38) git rm submodule_name/
+
+39) git diff --staged 
+
+40) git commit -m --allow-empty "No-ops commit"
+
+41) git rev-list --count main 
+
+42) git config --global help.autocorrect 1
+
+43) git config --global help.autocorrect 0
+
+44) git config feature.manyFiles 1
+
+45) time git status 
+
+46) git tag -L 
+
+47) git remote -v 
+
+48) git init empty_repo 
+
+49) git show 
+
+50) git amend commithash 
+
