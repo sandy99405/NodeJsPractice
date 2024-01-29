@@ -13884,3 +13884,20 @@ new commands
 49) git commit -m --allow-empty "No-ops commit"
 
 50) git show
+
+51) git worktree add 
+
+52) git worktree list
+
+53) git worktree remove 
+
+54) git config --global core.symlinks true
+
+55) git -c core.symlinks=true clone --recurse-submodules url
+
+56) git commit --amend
+
+57) git rm -r --cached submodule_name/folder
+
+58) git show first-parent
+
