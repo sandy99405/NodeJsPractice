@@ -13900,4 +13900,3 @@ new commands
 57) git rm -r --cached submodule_name/folder
 
 58) git show first-parent
-
