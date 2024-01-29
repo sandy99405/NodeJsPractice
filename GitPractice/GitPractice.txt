@@ -13844,3 +13844,20 @@ new commands
 29) git chekcout -b "new_branch"
 
 30) git push --force origin main
+
+31) git push --set-upstream origin main 
+
+32) git push -4
+
+33) git pull -4
+
+34) git submodule add url
+
+35) git clone empty empty_clone2 --recursive 
+
+36) git submodule update --init
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
