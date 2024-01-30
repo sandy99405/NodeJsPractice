@@ -1,0 +1,84 @@
+package app.organicmaps.bookmarks;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import app.organicmaps.R;
+import app.organicmaps.bookmarks.data.BookmarkInfo;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class BookmarkListDialogAdapter extends BaseBookmarkAdapter<BookmarkListDialogAdapter.SingleChoiceHolder>
+{
+  public static final int VIEW_TYPE_CATEGORY = 0;
+  public static final int VIEW_TYPE_ADD_NEW = 1;
+
+  private int mCheckedPosition;
+
+  public BookmarkListDialogAdapter(Context context, int pos,
+                                       @NonNull HashMap<Long,Boolean> mBookmarkNames)
+  {
+    super(context, mBookmarkNames);
+    mCheckedPosition = pos;
+  }
+
+  @Override
+  public SingleChoiceHolder onCreateViewHolder(ViewGroup parent, int viewType)
+  {
+    View view;
+    final LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+    view = inflater.inflate(R.layout.item_bookmark_category_choose, parent, false);
+
+    final SingleChoiceHolder holder = new SingleChoiceHolder(view);
+
+    return holder;
+  }
+
+  @Override
+  public void onBindViewHolder(SingleChoiceHolder holder, int position)
+  {
+    if (holder.getItemViewType() == VIEW_TYPE_CATEGORY)
+    {
+      String bmkName = getBookmarkInfo(position);
+      holder.name.setText(bmkName);
+    }
+  }
+
+  @Override
+  public int getItemViewType(int position)
+  {
+    return position == getItemCount() - 1 ? VIEW_TYPE_ADD_NEW : VIEW_TYPE_CATEGORY;
+  }
+
+  @Override
+  public int getItemCount()
+  {
+    return getItemCount() + 1;
+  }
+
+  public void chooseItem(int position)
+  {
+    final int oldPosition = mCheckedPosition;
+    mCheckedPosition = position;
+    notifyItemChanged(oldPosition);
+    notifyItemChanged(mCheckedPosition);
+  }
+
+  static class SingleChoiceHolder extends RecyclerView.ViewHolder
+  {
+    TextView name;
+    public SingleChoiceHolder(View convertView)
+    {
+      super(convertView);
+      name = convertView.findViewById(R.id.tv__set_name);
+    }
+  }
+}
