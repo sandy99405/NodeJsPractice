@@ -45,11 +45,8 @@ public class BookmarkListDialogAdapter extends BaseBookmarkAdapter<BookmarkListD
   @Override
   public void onBindViewHolder(SingleChoiceHolder holder, int position)
   {
-    if (holder.getItemViewType() == VIEW_TYPE_CATEGORY)
-    {
       String bmkName = getBookmarkInfo(position);
       holder.name.setText(bmkName);
-    }
   }
 
   @Override
