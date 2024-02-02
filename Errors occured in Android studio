@@ -1,0 +1,13 @@
+If there is indexing files or updating indexes, keep the cpp files as "Excluded"
+
+if the Running devices is shwoing as "Loading Devices" 
+     1) open a terminal in "D:\Android\SDK\platform-tools"
+     2) taskkill /F /IM adb.exe
+     3) adb start-server
+     4) adb kill-server
+     5) PS D:\Android\SDK\platform-tools> adb start-server
+        * daemon not running; starting now at tcp:5037
+        * daemon started successfully
+        PS D:\Android\SDK\platform-tools>
+
+    woala, the adb will restart and the Running devices will show the devices.

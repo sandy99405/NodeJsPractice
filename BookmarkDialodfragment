@@ -1,0 +1,59 @@
+package app.organicmaps.bookmarks;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmDialogFragment;
+import app.organicmaps.bookmarks.data.BookmarkCategory;
+import app.organicmaps.bookmarks.data.BookmarkInfo;
+import app.organicmaps.bookmarks.data.BookmarkManager;
+import app.organicmaps.dialog.EditTextDialogFragment;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class BookmarkListDialogFragment extends BaseMwmDialogFragment
+{
+  public static final String CATEGORY_POSITION = "ExtraCategoryPosition";
+
+  private BookmarkListDialogAdapter mAdapter;
+  private RecyclerView mRecycler;
+
+  @Override
+  protected int getStyle()
+  {
+    return STYLE_NO_TITLE;
+  }
+
+  @Nullable
+  @Override
+  public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+  {
+    View root = inflater.inflate(R.layout.choose_bookmark_category_fragment, container, false);
+    mRecycler = root.findViewById(R.id.recycler);
+    mRecycler.setLayoutManager(new LinearLayoutManager(requireActivity()));
+    return root;
+  }
+
+  @Override
+  public void onViewCreated(View view, Bundle savedInstanceState)
+  {
+    super.onViewCreated(view, savedInstanceState);
+
+    final Bundle args = getArguments();
+    final int catPosition = args.getInt(CATEGORY_POSITION, 0);
+    HashMap<Long,Boolean> items = BookmarkManager.INSTANCE.map;
+    mAdapter = new BookmarkListDialogAdapter(requireActivity(), catPosition, items);
+    mRecycler.setAdapter(mAdapter);
+  }
+}
