@@ -14629,3 +14629,19 @@ new commands
 
 50) git show
 
+51) git worktree add 
+
+52) git worktree list
+
+53) git worktree remove 
+
+54) git show first-parent
+
+55) git config --global core.symlinks true
+
+56) git -c core.symlinks=true clone --recurse-submodules url
+
+57) git commit --amend 
+
+58) git rm -r --cached submodule_name/folder
+
