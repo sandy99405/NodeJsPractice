@@ -14772,3 +14772,48 @@ new commands
 59) git rebase HEAD~2 --signoff 
 
 60) git push --force-with-lease origin main 
+
+
+
+                                                         git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert head 
+
+5) git revert commithash 
+
+6) git reflog
+
+7) git stash save "stash saved"
+
+8) git stash apply stash{0}
+
+9) git stash list 
+
+10) git stash pop 
+
+11) git bisect start 
+
+12) git bisect good 
+
+13) git bisect bad 
+
+14) git remote update --prune 
+
+15) git reset --hard origin main 
+
+16) git branch -vv
+
+17) git branch -vv | awk '/: gone]{print$1}'
+
+18) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+
+19) git log -S "text changed"
+
+20) git log --deorate --oneline --graph 
+
