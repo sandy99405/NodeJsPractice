@@ -15192,3 +15192,23 @@ new commands
 19) git branch -vv | awk '/: gone]{print$1}'
 
 20) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
+21) git grep -i -n "key_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root 
+
+28) git checkout -
+
+29) git checkout -b "New_branch"
+
+30) git push --force origin main 
