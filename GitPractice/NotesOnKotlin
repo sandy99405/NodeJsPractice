@@ -351,6 +351,7 @@ override fun onCreate(savedInstanceState : Bundle?){
 }
 
 
+
 @Override fun Oncreate(savedInstanceState : Bundle?)
 {
      super.onCreate(savedInstanceState)
@@ -359,4 +360,15 @@ override fun onCreate(savedInstanceState : Bundle?){
              savedInstanceState?.retrieveLanguageFromSavedState() ?: intent.retrieveLanguageFromParams()
              profileId!!
      )
+}
+
+
+@override fun onCreate(savedInstaceState : Bundle?)
+{
+    supre.onCreate(savedInstanceState)
+    profileId = intent.getIntExtra(NAVIGATION_PROFILE_ID_ARGUMENT_KEY, -1)
+    appLanguageFrgamnetPresenter.handleOnCreate(
+            savedInstanceState?.retrieveLanguageFromSavedState() ?: intent.retrieveLanguageFromParams()
+            profileId!!
+    )
 }
