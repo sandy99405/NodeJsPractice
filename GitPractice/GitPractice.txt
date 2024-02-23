@@ -15532,3 +15532,48 @@ new commands
 61) git clean -fd 
 
 62) git reset --hard HEAD
+
+
+
+                                                       git commands practice 
+
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git branch -vv 
+
+5) git branch -vv | awk '/: gone]{print$1}'
+
+6) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
+7) git log -S "text changed"
+
+8) git log --decorate --oneline --graph 
+
+9) git stash save "stash saved"
+
+10) git stash apply stash{0}
+
+11) git stash list 
+
+12) git stash pop 
+
+13) git bisect start 
+
+14) git bisect good 
+
+15) git bisect bad 
+
+16) git revert head 
+
+17) git revert commithash 
+
+18) git reflog 
+
+19) git remote update --prune 
+
+20) git reset --hard origin main 
