@@ -16049,3 +16049,11 @@ new commands
 61) git clean -fd 
 
 62) git reset --hard HEAD
+
+
+
+                                           git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
