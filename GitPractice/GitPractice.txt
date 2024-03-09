@@ -16479,3 +16479,19 @@ new commands
 
 20) git log --decorate --oneline --graph 
 
+21) git grep -i -n "key_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git submodule add url 
+
+25) git clone empty epty_clone2 --recursive 
+
+26) git submodule update --init 
+
+27) git submodule update --init --recursive 
+
+28) git rm submodule_name/
+
