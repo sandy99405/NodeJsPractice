@@ -16495,3 +16495,7 @@ new commands
 
 28) git rm submodule_name/
 
+29) git checkout -
+
+30) git checkout -b "new_branch"
+
