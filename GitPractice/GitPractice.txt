@@ -16443,7 +16443,7 @@ new commands
 
 2) git commit -a -m "New commit"
 
-3) git config -global "!git add -A && git commit -m"
+3) git config --global "!git add -A && git commit -m"
 
 4) git revert head 
 
@@ -16485,7 +16485,7 @@ new commands
 
 23) git grep -L -E main\(.+\) --"*.py"
 
-24) git submodule add url 
+24) git submodules add url 
 
 25) git clone empty epty_clone2 --recursive 
 
@@ -16499,3 +16499,44 @@ new commands
 
 30) git checkout -b "new_branch"
 
+31) git push --force origin main 
+
+31) git push --set-upstream origin main 
+
+32) git rebase -i origin/main 
+
+33) git rebase --continue 
+
+34) git rebase --abort 
+
+35) git rebase -i root 
+
+36) git diff --staged 
+
+37) git config --global help.autocorrect 1
+
+38) git config --global help.autocorrect 0
+
+39) git config feature.manyFiles 1
+
+40) time git status 
+
+41) git tag -L 
+
+42) git remote -v 
+
+43) git init empty_repo 
+
+44) git rev-list --count main 
+
+45) git amend commithash 
+
+46) git commit -m --allow-empty "No-ops commit"
+
+47) git push -4 
+
+48) git pull -4 
+
+49) git show 
+
+50) git 
