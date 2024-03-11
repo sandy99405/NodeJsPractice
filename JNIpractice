@@ -13,3 +13,9 @@ public class Test1{
             multipy(3,4);
       }
 }
+
+
+#include<jni.h>
+
+JNIEXPORT jdouble JNICALL Java_test1_Test1_multiply
+                                         (JNIEnv *, jobject, jdouble, jdouble);
