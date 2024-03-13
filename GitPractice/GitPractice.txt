@@ -16767,3 +16767,5 @@ new commands
 19) git branch -vv | awk '/: gone]{print$1}'
 
 20) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+
+21) git grep -i -n "Key_word"
