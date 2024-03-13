@@ -16565,15 +16565,15 @@ new commands
 
 62) git reset hard HEAD 
 
+                                        
 
-                                                     git commands practice 
-
+                                                                                                             git commands practice 
 
 1) git add -A 
 
 2) git commit -a -m "New commit"
 
-3) git config --global alias.ac "!git add -A && git commit -m"
+3) git config --global "!git add -A && git commit -m"
 
 4) git revert head 
 
@@ -16581,15 +16581,15 @@ new commands
 
 6) git reflog 
 
-7) git branch -vv 
+7) git remote update --prune 
 
-8) git branch -vv | awk '/: gone]{print$1}'
+8) git reset --hard origin main 
 
-9) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d
+9) git bisect start 
 
-10) git log -S "text changed"
+10) git bisect good 
 
-11) git log --decorate --oneline --graph 
+11) git bisect bad 
 
 12) git stash save "stash saved"
 
@@ -16599,12 +16599,12 @@ new commands
 
 15) git stash pop 
 
-16) git bisect start 
+16) git branch -vv 
 
-17) git bisect good 
+17) git branch -vv | awk '/: gone]{prtin$1}'
 
-18) git bisect bad 
+18) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
 
-19) git remote update --prune 
+19) git log -S "text changed"
 
-20) git reset --hard origin main 
+20) git log --decorate --oneline --graph
