@@ -1,0 +1,21 @@
+
+
+package test1;
+
+public class Test1{
+     public Test1(){
+
+     }
+
+      public native double multiply(double a, double b);
+
+      public static void main(String args[]){
+            multipy(3,4);
+      }
+}
+
+
+#include<jni.h>
+
+JNIEXPORT jdouble JNICALL Java_test1_Test1_multiply
+                                         (JNIEnv *, jobject, jdouble, jdouble);
