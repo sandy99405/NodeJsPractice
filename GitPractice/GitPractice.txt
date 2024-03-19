@@ -16609,6 +16609,7 @@ new commands
 
 20) git reset --hard origin main 
 
+<<<<<<< HEAD
                                                               git commands practice 
 
 1) git add -A 
@@ -16620,6 +16621,21 @@ new commands
 4) git revert head 
 
 5) git revert commithash 
+=======
+
+                                                                 git commands pracitce 
+
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git revert commithash 
+
+5) git revert head 
+>>>>>>> 31b590108b3ac73c36dfc22b5fd8750136172a29
 
 6) git reflog 
 
@@ -16637,17 +16653,115 @@ new commands
 
 13) git bisect bad 
 
+<<<<<<< HEAD
 14) git log -S "text changed"
 
 15) git log --decorate --oneline --graph 
+=======
+14) git remote update --prune 
+
+15) git reset --hard HEAD
+>>>>>>> 31b590108b3ac73c36dfc22b5fd8750136172a29
 
 16) git branch -vv 
 
 17) git branch -vv | awk '/: gone]{print$1}'
 
+<<<<<<< HEAD
 18) git branch -vv | awk '/: gone]{print$1}' | git branch -d 
 
 19) git remote update --prune 
 
 20) git reset --hard HEAD
 
+=======
+18) git branch -vv | awk '/: gone]{print$1}' | xargs git branch -d 
+
+19) git log -S "text changed"
+
+20) git log --decorate --oneline --graph 
+
+21) git grep -i -n "Key_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) --"*.py"
+
+24) git rebase -i origin/main 
+
+25) git rebase --continue 
+
+26) git rebase --abort 
+
+27) git rebase -i root 
+
+28) git checkout -
+
+29) git checkout -b "New_branch"
+
+30) git push --set-upstream origin main 
+
+31) git push --force origin main 
+
+32) git push -4
+
+33) git pull -4
+
+34) git submodule add url 
+
+35) git clone empty_repo --recursive 
+
+36) git submodule update --init 
+
+37) git submodule update --init --recursive 
+
+38) git rm submodule_name/
+
+39) git diff --staged 
+
+40) git rev-list --count main 
+
+41) git config --global help.autocorrect 1
+
+42) git config --global help.autocorrect 0
+
+43) git config feature.manyFiles 1
+
+44) time git status 
+
+45) git tag -L 
+
+46) git remote -v 
+
+47) git init empty_repo 
+
+48) git commit -m --allow-empty "No-ops commit"
+
+49) git amend commithash 
+
+50) git show 
+
+51) git worktree add
+
+52) git worktree list 
+
+53) git worktree remove 
+
+54) git show first-parent 
+
+55) git config --global core.symlinks true 
+
+56) git -c core.symlinks=true clone --recurse-submodules url
+
+57) git rm -r --cached submodule_folder/
+
+58) git commit --amend 
+
+59) git rebase HEAD --signoff 
+
+60) git push --force-with-lease origin main 
+
+61) git clean -fd 
+
+62) git reset --hard HEAD
+>>>>>>> 31b590108b3ac73c36dfc22b5fd8750136172a29
