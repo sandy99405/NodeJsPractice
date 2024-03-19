@@ -16919,3 +16919,11 @@ new commands
 57) git commit --amened 
 
 58) git rm -r --cached submodules_folder
+
+59) git rebase HEAD^2 --signoff
+
+60) git push --force-with-lease origin main 
+
+61) git clean -fd 
+
+62) git reset --hard HEAD 
