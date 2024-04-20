@@ -17228,3 +17228,22 @@ new commands
 
 20) git revert commithash 
 
+21) git grep -i -n "Key_word"
+
+22) git grep -l -E main\(.+\)
+
+23) git grep -L -E main\(.+\) -- "*.py'
+
+24) git submodule add url 
+
+25) git clone empty empty_clone --recursive 
+
+26) git submodule update --init 
+
+27) git submodule update --init --recrusive
+
+28) git rm submodule_name 
+
+29) git push --force origin main 
+
+30) git push --set-upstream origin main 
