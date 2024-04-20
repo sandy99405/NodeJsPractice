@@ -17247,3 +17247,16 @@ new commands
 29) git push --force origin main 
 
 30) git push --set-upstream origin main 
+
+31) git push -4 
+
+32) git pull -4 
+
+33) git rebse -i origin/main 
+
+34) git rebase --continue 
+
+35) git rebase --abort 
+
+36) git rebase -i root 
+
