@@ -17260,3 +17260,8 @@ new commands
 
 36) git rebase -i root 
 
+                                       Git commands practice 
+
+1. git add -A
+
+2. got commit -a -m "new commit"
