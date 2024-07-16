@@ -17259,8 +17259,3 @@ new commands
 35) git rebase --abort 
 
 36) git rebase -i root 
-
-                                                             git commands practice
-
-
-1) git add -A .
