@@ -17260,3 +17260,7 @@ new commands
 
 36) git rebase -i root 
 
+                                                             git commands practice
+
+
+1) git add -A .
