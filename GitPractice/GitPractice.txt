@@ -17259,3 +17259,27 @@ new commands
 35) git rebase --abort 
 
 36) git rebase -i root 
+
+
+                                                     git commands
+
+
+1) git add -A .
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git rev-list --count main
+
+5) git stash list
+
+6) git stash apply stash{0}
+
+7) git stash save "stash saved"
+
+8) git stash pop 
+
+9) git submodule add url 
+
+10) git grep -i -n 
