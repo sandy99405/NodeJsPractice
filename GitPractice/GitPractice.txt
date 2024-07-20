@@ -17283,3 +17283,20 @@ new commands
 9) git submodule add url 
 
 10) git grep -i -n "Key word"
+
+
+                                                              git commands pracitce
+
+1) git add -A
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git rev-list --count main 
+
+5) git rebase -i root
+
+6) git stash save "stash saved"
+
+7) git stash apply stash{0}
