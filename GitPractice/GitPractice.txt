@@ -17300,3 +17300,15 @@ new commands
 6) git stash save "stash saved"
 
 7) git stash apply stash{0}
+
+
+                                                                       git commands practice
+
+1) git add - A 
+
+2) git --global config alias.ac "!git commit -A && git commit -m"
+
+3) git revert commithash
+
+4) git rev-list --count main 
+
