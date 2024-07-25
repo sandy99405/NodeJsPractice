@@ -17312,3 +17312,10 @@ new commands
 
 4) git rev-list --count main 
 
+5) git stash list 
+
+6) git stashh pop 
+
+7) git stash save "Stash saved"
+
+8) git rebase -i root 
