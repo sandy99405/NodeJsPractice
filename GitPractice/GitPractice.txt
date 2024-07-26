@@ -17319,3 +17319,14 @@ new commands
 7) git stash save "Stash saved"
 
 8) git rebase -i root 
+
+
+
+                                                              git commands practice 
+
+
+1) git add -A 
+
+2) git config --global alias.ac "!git add -A && git commit -m"
+
+3) git revert commithash 
