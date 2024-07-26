@@ -17291,7 +17291,7 @@ new commands
 
 2) git commit -a -m "New commit"
 
-3) git config --global alias.ac "!git add -A && git commit -m"
+3) git config alias.ac --global "!git add -A && git commit -m"
 
 4) git rev-list --count main 
 
