@@ -17338,3 +17338,15 @@ new commands
 6) git stash pop 
 
 7) git stash apply stash{0}
+
+
+
+
+                                                                git commands practice 
+
+
+1) git add -A 
+
+2) git config --global alias.ac "!git commit -A && git commit -m"
+
+3) git revert -i root 
