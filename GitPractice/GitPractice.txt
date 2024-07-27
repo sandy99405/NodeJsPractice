@@ -17350,3 +17350,9 @@ new commands
 2) git config --global alias.ac "!git commit -A && git commit -m"
 
 3) git revert -i root 
+
+4) git stash save "stash saved"
+
+5) git stash apply stash{0}
+
+6) git stash list 
