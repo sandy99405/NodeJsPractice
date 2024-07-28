@@ -17381,3 +17381,9 @@ new commands
 9) git rebase -i root 
 
 10) git grep -i -n "key_word"
+
+11) git grep -l -n "Key word" 
+
+12) git log --oneline --graph --decorate 
+
+13) git diff --staged 
