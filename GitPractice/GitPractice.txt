@@ -17358,3 +17358,14 @@ new commands
 6) git stash list 
 
 7) git stash pop
+
+
+                                                             git commands praactice
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m" 
+
+4) git revet commithash 
