@@ -17369,3 +17369,15 @@ new commands
 3) git config --global alias.ac "!git add -A && git commit -m" 
 
 4) git revet commithash 
+
+5) git stash asve "stash saved" 
+
+6) git stash apply stash{0}
+
+7) git stash list 
+
+8) git stash pop 
+
+9) git rebase -i root 
+
+10) git grep -i -n "key_word"
