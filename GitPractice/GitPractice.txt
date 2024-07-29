@@ -17408,3 +17408,13 @@ new commands
 8) git stash pop 
 
 9) git stash apply stash{0}
+
+10) git remote -v 
+
+11) git init empty_repo 
+
+12) git log --oneline --graph --decorate 
+
+13) git grep -i -n "key word"
+
+14) git diff --staged 
