@@ -17398,3 +17398,13 @@ new commands
 3) git revert commithash 
 
 4) git log -S "text changed" 
+
+5) git rebase -i root 
+
+6) git stash save "stash saved"
+
+7) git stash list 
+
+8) git stash pop 
+
+9) git stash apply stash{0}
