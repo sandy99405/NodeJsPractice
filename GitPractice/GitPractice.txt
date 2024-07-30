@@ -17418,3 +17418,19 @@ new commands
 13) git grep -i -n "key word"
 
 14) git diff --staged 
+
+
+                                                                 git commands practice 
+
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git rev-list --count main 
+
+4) git log --oneline --graph --decorate 
+
+
+
+
