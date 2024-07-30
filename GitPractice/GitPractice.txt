@@ -17442,3 +17442,9 @@ new commands
 9) git grep -i -n "key_word"
 
 10) git grep -l -E main/(.+/)
+
+11) git diff --staged 
+
+12) git rebase -i root 
+
+13) git ammend commithash 
