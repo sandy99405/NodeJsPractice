@@ -17485,3 +17485,7 @@ new commands
 16) git commit -amend 
 
 17) git config --global alias.ac "!git add -A && git commit -m" 
+
+18) git push --force origin main 
+
+19) git push --upstream origin main 
