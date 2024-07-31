@@ -17448,3 +17448,17 @@ new commands
 12) git rebase -i root 
 
 13) git ammend commithash 
+
+
+                                                                        git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git rev-list --count main 
+
+4) git grep -i -n "Key_word"
+
+5) git grep -L -E main\(.+\)
+
