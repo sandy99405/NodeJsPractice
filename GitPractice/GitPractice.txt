@@ -17472,3 +17472,16 @@ new commands
 
 10) git remote update --prune 
 
+11) git diff --staged 
+
+12) git log --decorate --oneline --graph 
+
+13) git log -S "text changed"
+
+14) git rebase -i root 
+
+15) git amend commithash 
+
+16) git commit -amend 
+
+17) git config --global alias.ac "!git add -A && git commit -m" 
