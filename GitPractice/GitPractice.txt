@@ -17489,3 +17489,15 @@ new commands
 18) git push --force origin main 
 
 19) git push --upstream origin main 
+
+
+
+                                                                 git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit" 
+
+3) git config --global alias.ac "!git add -A && git commit -m" 
+
+4) git log --decorate --oneline --graph 
