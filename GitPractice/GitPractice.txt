@@ -17501,3 +17501,33 @@ new commands
 3) git config --global alias.ac "!git add -A && git commit -m" 
 
 4) git log --decorate --oneline --graph 
+
+5) git stash save "stash saved" 
+
+6) git stash apply stash{0}
+
+7) git stash list 
+
+8) git stash pop 
+
+9) git rebase -i root 
+
+10) git remote update --prune 
+
+11) git rev-list --count main 
+
+12) git diff --staged 
+
+13) git grep -l -n "key word" 
+
+14) git grep -L -E main\(.+\)
+
+15) git push --force updstream main 
+
+16) git push --set-upstream origin main 
+
+17) git amend commithash 
+
+18) git commit --amend 
+
+19) git log -S "text changed"
