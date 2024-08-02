@@ -17556,3 +17556,20 @@ new commands
 
 10) git grep -l -E main\(.+\)
 
+11) git rebase -i root 
+
+12) git rebase -i origin main 
+
+13) git push --force origin main 
+
+14) git push --set-updstream origin main 
+
+15) git pull -4
+
+16) git push -4 
+
+17) git commit --amend 
+
+18) git amend commithash 
+
+19) git diff --staged 
