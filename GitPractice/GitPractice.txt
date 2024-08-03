@@ -17596,3 +17596,14 @@ new commands
 9) git grep -i -n "key word"
 
 10) git grep -l -E main\(.+\)
+
+11) git commit --amend 
+
+12) git amend commithash 
+
+13) git config --global alias.ac "!git add -A && git commit -m"
+
+14) git remote -v
+
+15) git push --force origin main 
+
