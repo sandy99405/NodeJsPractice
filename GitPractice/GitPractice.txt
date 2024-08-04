@@ -17650,3 +17650,13 @@ new commands
 14) git pull -4 
 
 15) git diff --staged 
+
+16) git rev-list --count main 
+
+17) git grep -i -n "key word"
+
+18) git grep -l -E main\(.+\)
+
+19) git remote -v 
+
+20) git commit --amend 
