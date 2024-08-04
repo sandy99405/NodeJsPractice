@@ -17631,3 +17631,12 @@ new commands
 
 5) git rebase -i root 
 
+6) git stash save "stash saved"
+
+7) git stash list 
+
+8) git sash pop 
+
+9) git stash apply stash{0}
+
+10) git remote update -prune
