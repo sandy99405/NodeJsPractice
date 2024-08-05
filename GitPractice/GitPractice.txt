@@ -17684,3 +17684,13 @@ new commands
 
 10) git grep -l -E main\(.+\)
 
+11) git remote update --prune 
+
+12) git remote -v 
+
+13) git rebase -i root 
+
+14) git push --force origin main 
+
+15) git push --set-upstream origin main 
+
