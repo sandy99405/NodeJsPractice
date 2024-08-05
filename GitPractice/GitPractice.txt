@@ -17694,3 +17694,12 @@ new commands
 
 15) git push --set-upstream origin main 
 
+16) git diff --staged 
+
+17) git rev-list --count main 
+
+18) git push -4 
+
+19) git pull -4 
+
+20) git commit --amend 
