@@ -17761,4 +17761,13 @@ new commands
 
 15) git pull -4
 
-16) git 
+16) git diff --staged 
+
+17) git remote -v 
+
+18) git remote update --prune 
+
+19) git log -S "text changed" 
+
+20) git log --decorate --oneline --graph 
+
