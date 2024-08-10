@@ -17796,5 +17796,15 @@ new commands
 
 10) git remote update --prune 
 
+11) git grep -i -n "key word"
+
+12) git grep -l -E main\(.+\)
+
+13) git push --set-upstream origin main 
+
+14) git push --force origin main 
+
+15) git diff --staged 
+
 
 
