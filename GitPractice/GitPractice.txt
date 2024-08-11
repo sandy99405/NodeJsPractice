@@ -17851,3 +17851,12 @@ new commands
 
 15) git diff --staged 
 
+16) git log -S "text changed"
+
+17) git log --decorate --oneline --graph 
+
+18) git grep -i -n "kew word"
+
+19) git grep -l -E main\(.+\)
+
+20) git commit --amend 
