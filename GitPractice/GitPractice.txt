@@ -17876,3 +17876,12 @@ new commands
 
 5) git log -S "text chnged"
 
+6) git stash list 
+
+7) git stash pop 
+
+8) git stash apply stash{0}
+
+9) git log --decorate --online --graph 
+
+10) git grep -i -n "key word"
