@@ -17919,7 +17919,15 @@ new commands
 
 15) git push --set-upstream origin main 
 
+16) git push -4 
 
+17) git pull -4 
+
+18) git log -S "text changed"
+
+19) git log --decorate --oneline --graph 
+
+20) git branch -v 
 
 
 
