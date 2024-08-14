@@ -17962,3 +17962,13 @@ new commands
 14) git log --decorate --oneline --graph 
 
 15) git remote update --prune 
+
+16) git stash list 
+
+17) git stash pop 
+
+18) git stash apply stash{0}
+
+19) git diff --staged 
+
+20) git branch -v 
