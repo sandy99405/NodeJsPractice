@@ -17952,3 +17952,13 @@ new commands
 9) git push --set-upstream origin main 
 
 10) git rebase -i root 
+
+11) git push -4 
+
+12) git pull -4
+
+13) git log -s "text changed"
+
+14) git log --decorate --oneline --graph 
+
+15) git remote update --prune 
