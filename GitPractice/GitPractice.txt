@@ -17931,7 +17931,15 @@ new commands
 
 
 
+                                                            git commands practice 
 
+1) git add -A 
 
+2) git commit -a -m "New commit"
 
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git stash save "stash saved"
+
+5) git rev-list --count main
 
