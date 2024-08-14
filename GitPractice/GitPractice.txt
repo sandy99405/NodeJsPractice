@@ -17943,3 +17943,12 @@ new commands
 
 5) git rev-list --count main
 
+6) git grep -i -n "Key_word"
+
+7) git grep -l -E main\(.+\)
+
+8) git push --force origin main 
+
+9) git push --set-upstream origin main 
+
+10) git rebase -i root 
