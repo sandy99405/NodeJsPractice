@@ -17972,3 +17972,18 @@ new commands
 19) git diff --staged 
 
 20) git branch -v 
+
+
+
+
+                                                                            git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git rev-list --count main 
+
+5) git stash save "stash saved"
