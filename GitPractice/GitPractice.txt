@@ -17997,3 +17997,14 @@ new commands
 9) git log -S "text changed"
 
 10) git log --deorate --oneline --graph
+
+11) git grep -i -n "key_word"
+
+12) git grep -l -E main\(.+\)
+
+13) git rebase -i root 
+
+14) git diff --staged 
+
+15) git remote update --prune 
+
