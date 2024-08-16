@@ -18043,3 +18043,13 @@ new commands
 
 10) git grep -i -n "key_word"
 
+11) git rebase -i root 
+
+12) git push --force origin main
+
+13) git push --set-upstream origin main 
+
+14) git push -4 
+
+15) git pull -4 
+
