@@ -18032,3 +18032,14 @@ new commands
 4) git stash save "stash saved"
 
 5) git rev-list --count main 
+
+6) git stash apply stash{0}
+
+7) git stash list 
+
+8) git stash pop 
+
+9) git remote update --prune 
+
+10) git grep -i -n "key_word"
+
