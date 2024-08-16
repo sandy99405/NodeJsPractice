@@ -18017,3 +18017,18 @@ new commands
 19) git pull -4 
 
 20) git branch -v 
+
+
+
+
+                                                                          git commands pracitce
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git config --global alias.ac "!git add -A && git commit -m"
+
+4) git stash save "stash saved"
+
+5) git rev-list --count main 
