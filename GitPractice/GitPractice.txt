@@ -18096,3 +18096,13 @@ new commands
 14) git push --set-upstream origin main 
 
 15) git push -4 
+
+16) git pull -4 
+
+17) git diff --staged 
+
+18) git remote update --prune 
+
+19) git branch -v 
+
+20) git log --decorate --oneline --graph 
