@@ -18106,3 +18106,18 @@ new commands
 19) git branch -v 
 
 20) git log --decorate --oneline --graph 
+
+
+
+                                                                                 git commands practice 
+
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git rev-list --count main
+
+4) git stash save "stash saved"
+
+5) git rebase -i root 
