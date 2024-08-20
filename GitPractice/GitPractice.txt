@@ -18155,3 +18155,12 @@ new commands
 
 10) git rebase -i root 
 
+11) git push --set-upstream origin main 
+
+12) git push --force origin main 
+
+13) git push -4 
+
+14) git pull -4 
+
+15) git diff --staged 
