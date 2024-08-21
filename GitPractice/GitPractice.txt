@@ -18198,3 +18198,11 @@ new commands
 
 15) git rebase -i root 
 
+16) git diff --staged 
+
+17) git checkout -b
+
+18) f1
+
+19) git fetch upstream origin main 
+
