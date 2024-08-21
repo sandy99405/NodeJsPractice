@@ -18178,3 +18178,12 @@ new commands
 
 5) git stash save stash{0}
 
+6) git stash apply stash{0}
+
+7) git stash list 
+
+8) git stash pop 
+
+9) git remote update --prune 
+
+10) git grep -l -E main\(.+\)
