@@ -18239,3 +18239,12 @@ new commands
 
 15) git pull -4 
 
+16) git checkout -b 
+
+17) f1 
+
+18) git diff --staged 
+
+19) git log -S "text changed"
+
+20) git log --decorate --oneline --graph 
