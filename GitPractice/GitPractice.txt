@@ -18219,3 +18219,13 @@ new commands
 
 5) git grep -i -n "key_word"
 
+6) git grep -l -E main\(.+\)
+
+7) git rebase -i root 
+
+8) git stash apply stash{0}
+
+9) git stash pop 
+
+10) git stash list 
+
