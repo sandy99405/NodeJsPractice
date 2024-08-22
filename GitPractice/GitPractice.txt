@@ -18206,3 +18206,16 @@ new commands
 
 19) git fetch upstream origin main 
 
+
+                                                                       git commands pracitce 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git rev-list --count main 
+
+4) git stash save "stash saved"
+
+5) git grep -i -n "key_word"
+
