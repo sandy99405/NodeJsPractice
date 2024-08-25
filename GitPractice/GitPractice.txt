@@ -18316,4 +18316,12 @@ new commands
 
 15) git pull -4
 
-16) 
+16) git diff --staged
+
+17) git grep -i -l "key_word"
+
+18) git grep -l -E main\(.+\)
+
+19) git f1
+
+20) git log -S "text changed"
