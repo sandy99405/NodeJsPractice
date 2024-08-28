@@ -18359,3 +18359,12 @@ new commands
 
 15) git diff --staged 
 
+16) git checkout -b 
+
+17) git  log -S "text changed"
+
+18) git log --online --graph --decorate 
+
+19) git commit --amend 
+
+20) f1 
