@@ -18368,3 +18368,16 @@ new commands
 19) git commit --amend 
 
 20) f1 
+
+
+                                                                     git commands practice 
+
+1) git add -A 
+
+2) git commit -a -m "New commit"
+
+3) git rev-list --count main 
+
+4) git grep -i -n "key_word"
+
+5) git stash save "stash saved"
