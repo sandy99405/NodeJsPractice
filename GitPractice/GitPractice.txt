@@ -18439,4 +18439,4 @@ new commands
 
 19) git grep -l -E main\(.+\)
 
-20) git remote update -prune 
+20) git remote update --prune 
