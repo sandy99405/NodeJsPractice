@@ -1,0 +1,10 @@
+Complex internal tables
+
+DATA connections TYPE STANDARD TABLE OF st_connections
+                           WITH NON-UNIQUE KEY carrier_id, connection_id.
+
+
+DATA connection LIKE LINE OF connections.
+
+connection = connections[from_airport_id = 'SB'].
+
